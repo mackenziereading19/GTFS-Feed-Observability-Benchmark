@@ -92,3 +92,40 @@ this stage.
 
 The Santa Monica evidence represents historical publisher behaviour and must
 not be interpreted as a current feed-quality assessment.
+
+## D-007 — 2026-08-30 — Identity-aware comparison exposes hidden identifier churn
+
+**Decision:** Retain identity-aware route, stop and service-ID comparison as a
+useful longitudinal capability.
+
+**Real-feed evidence:**
+
+For the Santa Monica / Big Blue Bus transition from
+`gtfs_20190818-20200215.zip` to `gtfs_20200216-20200523.zip`:
+
+- route count changed only from 22 to 20, but:
+  - 20 route IDs were added;
+  - 22 route IDs were removed;
+- stop count changed only from 924 to 923, but:
+  - 8 stop IDs were added;
+  - 9 stop IDs were removed;
+- service IDs used by trips changed from 14 to 10:
+  - 0 were added;
+  - 4 were removed.
+
+**Interpretation:**
+
+Net entity-count deltas conceal substantial identifier churn. This supports the
+value of identity-aware longitudinal evidence beyond aggregate row counts.
+
+However, a removed GTFS identifier must not be interpreted as proof that the
+underlying service, route or stop was withdrawn. GTFS identifiers are
+publisher-controlled and may be regenerated between feed versions.
+
+For routes in particular, the near-total replacement of the ID namespace means
+the next useful feasibility gate is semantic continuity matching: determine
+whether old and new route IDs represent the same apparent routes using stable
+descriptive attributes.
+
+Do not add fuzzy matching, health scoring, anomaly thresholds or claims of
+service withdrawal until continuity behaviour has been evaluated.

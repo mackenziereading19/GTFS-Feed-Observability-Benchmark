@@ -87,6 +87,19 @@ class CompareManifestTest(unittest.TestCase):
             1,
         )
 
+    def test_stop_identity_added(self):
+        identities = self.result["identities"]
+
+        self.assertEqual(
+            identities["stops"]["added"],
+            ["__OBSERVABILITY_SYNTHETIC_STOP__"],
+        )
+
+        self.assertEqual(
+            identities["stops"]["removed"],
+            [],
+        )
+
     def test_feed_end_date_change(self):
         self.assertEqual(
             self.result["feed_info"]["feed_end_date"],

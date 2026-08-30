@@ -93,7 +93,7 @@ def main():
         raise SystemExit(f"Feed does not exist: {feed}")
 
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "source": {
             "filename": feed.name,
             "sha256": sha256_file(feed),
@@ -102,6 +102,7 @@ def main():
         "archive": {},
         "tables": {},
         "entities": {},
+        "identities": {},
         "feed_info": None,
         "calendar": None,
         "calendar_dates": None,
@@ -181,12 +182,32 @@ def main():
                     ),
                 }
 
+                if label in {"routes", "stops"}:
+                    manifest["identities"][label] = sorted(
+                        {
+                            row.get(identifier, "").strip()
+                            for row in rows
+                            if row.get(identifier, "").strip()
+                        }
+                    )
+
         trips, _ = rows_for("trips.txt")
 
         if trips:
-            manifest["entities"]["service_ids_in_trips"] = unique_count(
-                trips,
-                "service_id",
+            service_ids = sorted(
+                {
+                    row.get("service_id", "").strip()
+                    for row in trips
+                    if row.get("service_id", "").strip()
+                }
+            )
+
+            manifest["entities"]["service_ids_in_trips"] = len(
+                service_ids
+            )
+
+            manifest["identities"]["service_ids_in_trips"] = (
+                service_ids
             )
 
         calendar, _ = rows_for("calendar.txt")

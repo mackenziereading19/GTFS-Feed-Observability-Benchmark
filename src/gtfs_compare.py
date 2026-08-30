@@ -10,7 +10,7 @@ def load_manifest(path):
     with Path(path).open() as handle:
         data = json.load(handle)
 
-    if data.get("schema_version") != 1:
+    if data.get("schema_version") not in {1, 2}:
         raise ValueError(
             f"Unsupported manifest schema: "
             f"{data.get('schema_version')}"
@@ -123,6 +123,28 @@ def compare_entities(before, after):
                 item["delta"] = new_value - old_value
 
             changes[key] = item
+
+    return changes
+
+
+def compare_identities(before, after):
+    old = before.get("identities", {})
+    new = after.get("identities", {})
+
+    changes = {}
+
+    for key in sorted(set(old) | set(new)):
+        old_values = set(old.get(key, []))
+        new_values = set(new.get(key, []))
+
+        added = sorted(new_values - old_values)
+        removed = sorted(old_values - new_values)
+
+        if added or removed:
+            changes[key] = {
+                "added": added,
+                "removed": removed,
+            }
 
     return changes
 
@@ -246,6 +268,10 @@ def compare_manifests(before, after):
             after,
         ),
         "entities": compare_entities(
+            before,
+            after,
+        ),
+        "identities": compare_identities(
             before,
             after,
         ),

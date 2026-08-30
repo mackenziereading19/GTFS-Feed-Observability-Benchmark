@@ -86,3 +86,20 @@ Usage:
 python3 src/gtfs_compare.py \
   baseline-manifest.json \
   candidate-manifest.json
+
+## V3 — Identity-aware change
+
+Manifest schema 2 optionally preserves sorted identity sets for:
+
+- routes;
+- stops;
+- service IDs referenced by trips.
+
+Pairwise comparison can therefore report identifiers added and removed between
+feed versions.
+
+Identity disappearance is descriptive evidence only. A removed GTFS ID does
+not establish that the corresponding real-world service or infrastructure was
+removed because publishers may regenerate identifiers between feed versions.
+
+Schema-1 manifests remain readable by the comparator.
