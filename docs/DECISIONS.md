@@ -31,3 +31,23 @@ mdb-1132.
 Reason: Its provenance and SHA-256 were independently established during
 the GTFS next-four-weeks feasibility investigation, so it provides a useful
 known input without another download.
+
+## D-005 — 2026-08-30 — Controlled pairwise comparison before live history
+
+**Decision:** Validate the first manifest comparator against a deterministic
+derived fixture with known changes before comparing two independently
+published real-world feed versions.
+
+**Reason:** A controlled fixture provides exact expected deltas and prevents
+misinterpreting comparator defects as real-world feed behaviour.
+
+The controlled fixture changes only:
+
+- removal of `transfers.txt`;
+- addition of one unused synthetic stop;
+- `feed_end_date` from `20260926` to `20261003`;
+- maximum `calendar.txt` end date from `20261031` to `20261107`;
+- one additional `calendar_dates.txt` row dated `20261003`.
+
+The fixture is test infrastructure only and is not evidence about the real
+Greater Wellington feed.

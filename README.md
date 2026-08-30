@@ -65,3 +65,24 @@ V0 uses only the Python standard library.
 
 ```bash
 python3 src/gtfs_observe.py FEED.zip > manifest.json
+
+## V1 — Pairwise manifest comparison
+
+V1 compares two snapshot manifests and reports descriptive changes including:
+
+- whether the source ZIP hash changed;
+- tables added or removed;
+- GTFS table row-count deltas;
+- selected entity-count deltas;
+- selected `feed_info.txt` changes;
+- raw calendar and exception-date boundary changes.
+
+V1 remains descriptive. It does not label changes as healthy, unhealthy,
+anomalous or erroneous.
+
+Usage:
+
+```bash
+python3 src/gtfs_compare.py \
+  baseline-manifest.json \
+  candidate-manifest.json

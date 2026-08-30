@@ -1,0 +1,122 @@
+{
+  "archive": {
+    "file_count": 11,
+    "filenames": [
+      "agency.txt",
+      "calendar.txt",
+      "calendar_dates.txt",
+      "feed_info.txt",
+      "routes.txt",
+      "shapes.txt",
+      "stop_pattern_trips.txt",
+      "stop_patterns.txt",
+      "stop_times.txt",
+      "stops.txt",
+      "trips.txt"
+    ]
+  },
+  "calendar": {
+    "end_date": {
+      "maximum": "20261107",
+      "minimum": "20261031"
+    },
+    "rows": 989,
+    "service_ids": 989,
+    "start_date": {
+      "maximum": "20260823",
+      "minimum": "20260823"
+    }
+  },
+  "calendar_dates": {
+    "date": {
+      "maximum": "20261003",
+      "minimum": "20260823"
+    },
+    "exception_types": [
+      "1"
+    ],
+    "rows": 15357,
+    "service_ids": 989
+  },
+  "entities": {
+    "agencies": {
+      "rows": 23,
+      "unique_ids": 23
+    },
+    "routes": {
+      "rows": 245,
+      "unique_ids": 245
+    },
+    "service_ids_in_trips": 989,
+    "stops": {
+      "rows": 3144,
+      "unique_ids": 3144
+    },
+    "trips": {
+      "rows": 9551,
+      "unique_ids": 9551
+    }
+  },
+  "feed_info": [
+    {
+      "feed_end_date": "20261003",
+      "feed_lang": "en",
+      "feed_publisher_name": "Greater Wellington Regional Council",
+      "feed_publisher_url": "http://www.metlink.org.nz",
+      "feed_start_date": "20260823",
+      "feed_version": "School Term Blocks_20260806-144204"
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "filename": "mdb-1132-controlled-v1.zip",
+    "sha256": "6f868bd9fa7812ccdb15ad388cfda85bc2184ad21ee07b6d2f427563ee57fbf4",
+    "size_bytes": 11494279
+  },
+  "tables": {
+    "agency.txt": {
+      "rows": 24,
+      "size_bytes": 2775
+    },
+    "calendar.txt": {
+      "rows": 989,
+      "size_bytes": 46344
+    },
+    "calendar_dates.txt": {
+      "rows": 15357,
+      "size_bytes": 394035
+    },
+    "feed_info.txt": {
+      "rows": 1,
+      "size_bytes": 210
+    },
+    "routes.txt": {
+      "rows": 245,
+      "size_bytes": 34557
+    },
+    "shapes.txt": {
+      "rows": 379572,
+      "size_bytes": 29818680
+    },
+    "stop_pattern_trips.txt": {
+      "rows": 9551,
+      "size_bytes": 565332
+    },
+    "stop_patterns.txt": {
+      "rows": 11626,
+      "size_bytes": 294807
+    },
+    "stop_times.txt": {
+      "rows": 334850,
+      "size_bytes": 24733485
+    },
+    "stops.txt": {
+      "rows": 3144,
+      "size_bytes": 292034
+    },
+    "trips.txt": {
+      "rows": 9551,
+      "size_bytes": 1116464
+    }
+  }
+}
