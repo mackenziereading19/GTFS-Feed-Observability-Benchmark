@@ -121,3 +121,23 @@ routes as withdrawn services.
 In the first real historical evaluation, 20 of 22 old Santa Monica route IDs
 mapped one-to-one to semantically identical new routes despite no route IDs
 persisting between feed versions.
+
+## V5 — Unmatched-route forensics
+
+When a route has no conservative semantic successor, forensic analysis can
+inspect:
+
+- route metadata;
+- trip counts;
+- service IDs;
+- effective service dates after `calendar_dates.txt` exceptions;
+- trip headsigns;
+- stop patterns;
+- descriptive candidate overlap in the succeeding feed.
+
+Candidate ranking is investigative only and is not used as an automated fuzzy
+continuity rule.
+
+The first real evaluation found that both unmatched Santa Monica routes were
+exception-only services whose effective service periods were much shorter than
+their nominal `calendar.txt` bounds.

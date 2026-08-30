@@ -167,3 +167,56 @@ A removed `route_id` is therefore not evidence of service withdrawal.
 The next gate is forensic examination of the two unmatched baseline routes.
 Do not introduce fuzzy matching or infer withdrawal until those cases are
 understood.
+
+## D-009 — 2026-08-30 — Unmatched routes are bounded exception-only services
+
+**Decision:** Retain forensic analysis of unmatched route-continuity cases and
+record effective service dates rather than inferring route withdrawal from
+identifier absence.
+
+**Cases:**
+
+### Route 20 / baseline route_id 3075
+
+- `route_short_name`: `20`;
+- `route_long_name`: `Dwtn LA Expo Shuttle`;
+- 48 trips;
+- sole service ID: `84310`;
+- no regular weekdays are active in `calendar.txt`;
+- service is supplied entirely through five `calendar_dates.txt` additions;
+- effective service dates are 2019-08-19 through 2019-08-23;
+- no candidate route in the succeeding feed has short name `20`;
+- candidate stop-set overlap is zero for the highest-ranked alternatives.
+
+### Route 45 / baseline route_id 3082
+
+- `route_short_name`: `45`;
+- `route_long_name`: `SM Pier Shuttle`;
+- 135 trips;
+- service IDs: `41401`, `41402`, `41410`;
+- none has regular weekdays active in `calendar.txt`;
+- service is supplied through exception additions;
+- combined effective service span is 2019-08-18 through 2019-09-01;
+- no candidate route in the succeeding feed has short name `45`;
+- candidate stop-set overlap is negligible.
+
+**Interpretation:**
+
+The two routes left unmatched by semantic route continuity are temporally
+bounded exception-only services. Their nominal calendar rows span the full
+feed period, but their effective service exists only on a small set of added
+dates.
+
+This demonstrates another observability distinction:
+
+1. declared calendar bounds;
+2. effective service dates after exceptions;
+3. semantic continuity into the succeeding feed.
+
+The evidence supports describing these routes as bounded services absent from
+the succeeding publication. It does not independently establish the policy or
+operational reason for their absence and should not be labelled as service
+withdrawal without external evidence.
+
+Do not generalise candidate ranking into fuzzy automated matching at this
+stage.

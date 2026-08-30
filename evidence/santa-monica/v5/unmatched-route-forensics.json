@@ -1,0 +1,787 @@
+{
+  "baseline": "gtfs_20190818-20200215.zip",
+  "candidate": "gtfs_20200216-20200523.zip",
+  "schema_version": 1,
+  "targets": {
+    "3075": {
+      "baseline_summary": {
+        "direction_ids": [
+          "0",
+          "1"
+        ],
+        "effective_service_span": {
+          "first_date": "2019-08-19",
+          "last_date": "2019-08-23"
+        },
+        "route": {
+          "agency_id": "6216179",
+          "route_color": "FB8CFB",
+          "route_desc": "",
+          "route_id": "3075",
+          "route_long_name": "Dwtn LA Expo Shuttle",
+          "route_short_name": "20",
+          "route_text_color": "000000",
+          "route_type": "3",
+          "route_url": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+        },
+        "service_calendars": {
+          "84310": {
+            "active_weekdays": [],
+            "calendar_end_date": "20200215",
+            "calendar_start_date": "20190818",
+            "effective_date_count": 5,
+            "effective_first_date": "2019-08-19",
+            "effective_last_date": "2019-08-23",
+            "exception_additions": [
+              "20190819",
+              "20190820",
+              "20190821",
+              "20190822",
+              "20190823"
+            ],
+            "exception_removals": []
+          }
+        },
+        "service_ids": [
+          "84310"
+        ],
+        "top_stop_patterns": [
+          {
+            "stop_ids": [
+              "1629",
+              "954",
+              "1630"
+            ],
+            "trip_count": 24
+          },
+          {
+            "stop_ids": [
+              "1630",
+              "1629"
+            ],
+            "trip_count": 24
+          }
+        ],
+        "trip_count": 48,
+        "trip_headsigns": [
+          "Express Shuttle 7th & Metro Center",
+          "Express Shuttle LATTC Ortho Expo Station"
+        ],
+        "unique_stop_patterns": 2
+      },
+      "candidate_matches": [
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "F8971D",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Main St & Santa Monica Blvd/UCLA",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "1",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-1.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3134",
+          "route_long_name": "Main St & Santa Monica Blvd/UCLA",
+          "route_short_name": "1",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 448
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "66B360",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Olympic Blvd",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "5",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-5.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3138",
+          "route_long_name": "Olympic Blvd",
+          "route_short_name": "5",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 57
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "9397CB",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Pico Blvd",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "7",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-7.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3140",
+          "route_long_name": "Pico Blvd",
+          "route_short_name": "7",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 427
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "EB4498",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Pacific Palisades",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "9",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-9.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3142",
+          "route_long_name": "Pacific Palisades",
+          "route_short_name": "9",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 188
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "C298C6",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Venice/Westwood Sta/UCLA Rapid",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "R12",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Rapid-12.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3144",
+          "route_long_name": "Venice/Westwood Sta/UCLA Rapid",
+          "route_short_name": "R12",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 355
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "C1D82F",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Barrington Ave",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "15",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-15.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3146",
+          "route_long_name": "Barrington Ave",
+          "route_short_name": "15",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 62
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "F49AC1",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Wilshire Bl/Bundy Dr-Marina del Rey",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "16",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-16.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3147",
+          "route_long_name": "Wilshire Bl/Bundy Dr-Marina del Rey",
+          "route_short_name": "16",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 54
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "FEC221",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Culver City Sta - UCLA",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "17",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-17.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3148",
+          "route_long_name": "Culver City Sta - UCLA",
+          "route_short_name": "17",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 193
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "8FD2CA",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Lincoln Blvd/LAX Rapid",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "R3",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Rapid-3.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3151",
+          "route_long_name": "Lincoln Blvd/LAX Rapid",
+          "route_short_name": "R3",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 48
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "F5866C",
+              "old": "FB8CFB"
+            },
+            "route_long_name": {
+              "new": "Pico Blvd Rapid",
+              "old": "Dwtn LA Expo Shuttle"
+            },
+            "route_short_name": {
+              "new": "R7",
+              "old": "20"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Rapid-7.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-20.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3152",
+          "route_long_name": "Pico Blvd Rapid",
+          "route_short_name": "R7",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 109
+        }
+      ]
+    },
+    "3082": {
+      "baseline_summary": {
+        "direction_ids": [
+          "0"
+        ],
+        "effective_service_span": {
+          "first_date": "2019-08-18",
+          "last_date": "2019-09-01"
+        },
+        "route": {
+          "agency_id": "6216179",
+          "route_color": "A6CAF0",
+          "route_desc": "",
+          "route_id": "3082",
+          "route_long_name": "SM Pier Shuttle",
+          "route_short_name": "45",
+          "route_text_color": "000000",
+          "route_type": "3",
+          "route_url": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+        },
+        "service_calendars": {
+          "41401": {
+            "active_weekdays": [],
+            "calendar_end_date": "20200215",
+            "calendar_start_date": "20190818",
+            "effective_date_count": 2,
+            "effective_first_date": "2019-08-24",
+            "effective_last_date": "2019-08-31",
+            "exception_additions": [
+              "20190824",
+              "20190831"
+            ],
+            "exception_removals": []
+          },
+          "41402": {
+            "active_weekdays": [],
+            "calendar_end_date": "20200215",
+            "calendar_start_date": "20190818",
+            "effective_date_count": 3,
+            "effective_first_date": "2019-08-18",
+            "effective_last_date": "2019-09-01",
+            "exception_additions": [
+              "20190818",
+              "20190825",
+              "20190901"
+            ],
+            "exception_removals": []
+          },
+          "41410": {
+            "active_weekdays": [],
+            "calendar_end_date": "20200215",
+            "calendar_start_date": "20190818",
+            "effective_date_count": 10,
+            "effective_first_date": "2019-08-19",
+            "effective_last_date": "2019-08-30",
+            "exception_additions": [
+              "20190819",
+              "20190820",
+              "20190821",
+              "20190822",
+              "20190823",
+              "20190826",
+              "20190827",
+              "20190828",
+              "20190829",
+              "20190830"
+            ],
+            "exception_removals": []
+          }
+        },
+        "service_ids": [
+          "41401",
+          "41402",
+          "41410"
+        ],
+        "top_stop_patterns": [
+          {
+            "stop_ids": [
+              "1407",
+              "1633",
+              "1634",
+              "289",
+              "259",
+              "104",
+              "227",
+              "1407"
+            ],
+            "trip_count": 135
+          }
+        ],
+        "trip_count": 135,
+        "trip_headsigns": [
+          "↷ SM Pier / 3rd St Promenade"
+        ],
+        "unique_stop_patterns": 1
+      },
+      "candidate_matches": [
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "005984",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Ocean Park Blvd & Westwood Bl/UCLA",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "8",
+              "old": "45"
+            },
+            "route_text_color": {
+              "new": "FFFFFF",
+              "old": "000000"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-8.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 3,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3141",
+          "route_long_name": "Ocean Park Blvd & Westwood Bl/UCLA",
+          "route_short_name": "8",
+          "route_type": "3",
+          "stop_set_jaccard": 0.029412,
+          "trip_count": 242
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "EB4498",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Pacific Palisades",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "9",
+              "old": "45"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-9.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3142",
+          "route_long_name": "Pacific Palisades",
+          "route_short_name": "9",
+          "route_type": "3",
+          "stop_set_jaccard": 0.027027,
+          "trip_count": 188
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "66B360",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Olympic Blvd",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "5",
+              "old": "45"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-5.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3138",
+          "route_long_name": "Olympic Blvd",
+          "route_short_name": "5",
+          "route_type": "3",
+          "stop_set_jaccard": 0.020833,
+          "trip_count": 57
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "F5866C",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Pico Blvd Rapid",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "R7",
+              "old": "45"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Rapid-7.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3152",
+          "route_long_name": "Pico Blvd Rapid",
+          "route_short_name": "R7",
+          "route_type": "3",
+          "stop_set_jaccard": 0.020408,
+          "trip_count": 109
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "00AFDB",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Downtown LA Freeway Express",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "R10",
+              "old": "45"
+            },
+            "route_text_color": {
+              "new": "FFFFFF",
+              "old": "000000"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Rapid-10.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 3,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3143",
+          "route_long_name": "Downtown LA Freeway Express",
+          "route_short_name": "R10",
+          "route_type": "3",
+          "stop_set_jaccard": 0.014286,
+          "trip_count": 12
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "F8971D",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Main St & Santa Monica Blvd/UCLA",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "1",
+              "old": "45"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-1.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3134",
+          "route_long_name": "Main St & Santa Monica Blvd/UCLA",
+          "route_short_name": "1",
+          "route_type": "3",
+          "stop_set_jaccard": 0.01,
+          "trip_count": 448
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "76174D",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "UCLA - Marina del Rey",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "18",
+              "old": "45"
+            },
+            "route_text_color": {
+              "new": "FFFFFF",
+              "old": "000000"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-18.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 3,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3149",
+          "route_long_name": "UCLA - Marina del Rey",
+          "route_short_name": "18",
+          "route_type": "3",
+          "stop_set_jaccard": 0.009524,
+          "trip_count": 170
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "9397CB",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Pico Blvd",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "7",
+              "old": "45"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-7.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3140",
+          "route_long_name": "Pico Blvd",
+          "route_short_name": "7",
+          "route_type": "3",
+          "stop_set_jaccard": 0.008,
+          "trip_count": 427
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "C298C6",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Venice/Westwood Sta/UCLA Rapid",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "R12",
+              "old": "45"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Rapid-12.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3144",
+          "route_long_name": "Venice/Westwood Sta/UCLA Rapid",
+          "route_short_name": "R12",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 355
+        },
+        {
+          "different_route_fields": {
+            "route_color": {
+              "new": "C1D82F",
+              "old": "A6CAF0"
+            },
+            "route_long_name": {
+              "new": "Barrington Ave",
+              "old": "SM Pier Shuttle"
+            },
+            "route_short_name": {
+              "new": "15",
+              "old": "45"
+            },
+            "route_url": {
+              "new": "http://bigbluebus.com/Routes-and-Schedules/Route-15.aspx",
+              "old": "http://bigbluebus.com/Routes-and-Schedules/Route-45.aspx"
+            }
+          },
+          "equal_route_fields": 4,
+          "exact_long_name": false,
+          "exact_route_type": true,
+          "exact_short_name": false,
+          "route_id": "3146",
+          "route_long_name": "Barrington Ave",
+          "route_short_name": "15",
+          "route_type": "3",
+          "stop_set_jaccard": 0.0,
+          "trip_count": 62
+        }
+      ]
+    }
+  }
+}
