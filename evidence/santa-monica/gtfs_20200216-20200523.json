@@ -1,0 +1,135 @@
+{
+  "archive": {
+    "file_count": 14,
+    "filenames": [
+      "agency.txt",
+      "calendar.txt",
+      "calendar_dates.txt",
+      "fare_attributes.txt",
+      "fare_rules.txt",
+      "feed_info.txt",
+      "gtfs.xsd",
+      "routes.txt",
+      "services",
+      "shapes.txt",
+      "stop_times.txt",
+      "stops.txt",
+      "transfers.txt",
+      "trips.txt"
+    ]
+  },
+  "calendar": {
+    "end_date": {
+      "maximum": "20200523",
+      "minimum": "20200523"
+    },
+    "rows": 10,
+    "service_ids": 10,
+    "start_date": {
+      "maximum": "20200216",
+      "minimum": "20200216"
+    }
+  },
+  "calendar_dates": {
+    "date": {
+      "maximum": "20200522",
+      "minimum": "20200218"
+    },
+    "exception_types": [
+      "1"
+    ],
+    "rows": 275,
+    "service_ids": 6
+  },
+  "entities": {
+    "agencies": {
+      "rows": 1,
+      "unique_ids": 1
+    },
+    "routes": {
+      "rows": 20,
+      "unique_ids": 20
+    },
+    "service_ids_in_trips": 10,
+    "stops": {
+      "rows": 923,
+      "unique_ids": 923
+    },
+    "trips": {
+      "rows": 3563,
+      "unique_ids": 3563
+    }
+  },
+  "feed_info": [
+    {
+      "feed_end_date": "20200620",
+      "feed_lang": "en",
+      "feed_publisher_name": "Big Blue Bus",
+      "feed_publisher_url": "http://www.bigbluebus.com",
+      "feed_start_date": "20200216",
+      "feed_version": "2020-02 (Feb)_20200121"
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "filename": "gtfs_20200216-20200523.zip",
+    "sha256": "fb971f9abab9529a421033cb29c498c4fb224b7ca0cf6b74ad7beed18cd4de35",
+    "size_bytes": 1177281
+  },
+  "tables": {
+    "agency.txt": {
+      "rows": 1,
+      "size_bytes": 176
+    },
+    "calendar.txt": {
+      "rows": 10,
+      "size_bytes": 468
+    },
+    "calendar_dates.txt": {
+      "rows": 275,
+      "size_bytes": 4982
+    },
+    "fare_attributes.txt": {
+      "rows": 2,
+      "size_bytes": 101
+    },
+    "fare_rules.txt": {
+      "rows": 21,
+      "size_bytes": 286
+    },
+    "feed_info.txt": {
+      "rows": 1,
+      "size_bytes": 177
+    },
+    "gtfs.xsd": {
+      "size_bytes": 31396
+    },
+    "routes.txt": {
+      "rows": 20,
+      "size_bytes": 2388
+    },
+    "services": {
+      "size_bytes": 71
+    },
+    "shapes.txt": {
+      "rows": 21485,
+      "size_bytes": 834615
+    },
+    "stop_times.txt": {
+      "rows": 129412,
+      "size_bytes": 6094560
+    },
+    "stops.txt": {
+      "rows": 923,
+      "size_bytes": 87417
+    },
+    "transfers.txt": {
+      "rows": 143,
+      "size_bytes": 1556
+    },
+    "trips.txt": {
+      "rows": 3563,
+      "size_bytes": 151509
+    }
+  }
+}

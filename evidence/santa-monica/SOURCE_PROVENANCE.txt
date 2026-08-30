@@ -1,0 +1,16 @@
+source_repository=https://github.com/CityofSantaMonica/GTFS
+publisher=City of Santa Monica / Big Blue Bus
+
+baseline_filename=gtfs_20190818-20200215.zip
+baseline_repository_storage=Git LFS
+baseline_raw_pointer_url=https://raw.githubusercontent.com/CityofSantaMonica/GTFS/master/gtfs_20190818-20200215.zip
+baseline_media_url=https://media.githubusercontent.com/media/CityofSantaMonica/GTFS/master/gtfs_20190818-20200215.zip
+baseline_sha256=e4d665a8d32b90d6897778d171f8f1948179bf5d0838ba7e3da95411bd584998
+
+candidate_filename=gtfs_20200216-20200523.zip
+candidate_url=https://raw.githubusercontent.com/CityofSantaMonica/GTFS/master/gtfs_20200216-20200523.zip
+candidate_sha256=fb971f9abab9529a421033cb29c498c4fb224b7ca0cf6b74ad7beed18cd4de35
+
+retrieved_utc=2026-08-30T22:35:10Z
+
+note=Both inputs are genuine publisher archive objects. The older object required GitHub's media endpoint because the repository stores ZIP archives through Git LFS.

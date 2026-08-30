@@ -51,3 +51,44 @@ The controlled fixture changes only:
 
 The fixture is test infrastructure only and is not evidence about the real
 Greater Wellington feed.
+
+## D-006 — 2026-08-30 — Real longitudinal comparison establishes non-zero signal
+
+**Decision:** Retain the Santa Monica / Big Blue Bus two-version comparison as
+the first real longitudinal feasibility evidence.
+
+**Inputs:**
+
+- official City of Santa Monica / Big Blue Bus historical GTFS archive;
+- `gtfs_20190818-20200215.zip`;
+- `gtfs_20200216-20200523.zip`;
+- both genuine publisher archive objects;
+- older archive recovered through GitHub's media endpoint because it is stored
+  through Git LFS.
+
+**Observed transition:**
+
+- routes: 22 -> 20;
+- trips: 3,720 -> 3,563;
+- service IDs used by trips: 14 -> 10;
+- stops: 924 -> 923;
+- stop_times rows: 130,168 -> 129,412;
+- shapes rows: 20,239 -> 21,485;
+- no GTFS tables added or removed;
+- feed and calendar temporal bounds advanced into the new publication period.
+
+**Interpretation:**
+
+The deterministic comparison produces genuine longitudinal evidence on a real
+publisher transition. This supports continuing feasibility work.
+
+However, aggregate row and entity counts do not yet establish a strong
+observability niche over ordinary GTFS diff tooling. The next useful gate is
+identity-aware change: determine which route, stop and service IDs were added
+or removed rather than merely reporting count deltas.
+
+Do not add health scoring, anomaly thresholds or normative interpretations at
+this stage.
+
+The Santa Monica evidence represents historical publisher behaviour and must
+not be interpreted as a current feed-quality assessment.

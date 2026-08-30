@@ -1,0 +1,146 @@
+{
+  "baseline": {
+    "filename": "gtfs_20190818-20200215.zip",
+    "sha256": "e4d665a8d32b90d6897778d171f8f1948179bf5d0838ba7e3da95411bd584998"
+  },
+  "candidate": {
+    "filename": "gtfs_20200216-20200523.zip",
+    "sha256": "fb971f9abab9529a421033cb29c498c4fb224b7ca0cf6b74ad7beed18cd4de35"
+  },
+  "comparison_schema_version": 1,
+  "entities": {
+    "routes": {
+      "rows": {
+        "after": 20,
+        "before": 22,
+        "delta": -2
+      },
+      "unique_ids": {
+        "after": 20,
+        "before": 22,
+        "delta": -2
+      }
+    },
+    "service_ids_in_trips": {
+      "after": 10,
+      "before": 14,
+      "delta": -4
+    },
+    "stops": {
+      "rows": {
+        "after": 923,
+        "before": 924,
+        "delta": -1
+      },
+      "unique_ids": {
+        "after": 923,
+        "before": 924,
+        "delta": -1
+      }
+    },
+    "trips": {
+      "rows": {
+        "after": 3563,
+        "before": 3720,
+        "delta": -157
+      },
+      "unique_ids": {
+        "after": 3563,
+        "before": 3720,
+        "delta": -157
+      }
+    }
+  },
+  "feed_info": {
+    "feed_end_date": {
+      "after": "20200620",
+      "before": "20200215"
+    },
+    "feed_start_date": {
+      "after": "20200216",
+      "before": "20190818"
+    },
+    "feed_version": {
+      "after": "2020-02 (Feb)_20200121",
+      "before": "1908 (Aug)_20190724"
+    }
+  },
+  "source_changed": true,
+  "tables": {
+    "added": [],
+    "removed": [],
+    "row_changes": {
+      "calendar.txt": {
+        "after": 10,
+        "before": 14,
+        "delta": -4
+      },
+      "calendar_dates.txt": {
+        "after": 275,
+        "before": 492,
+        "delta": -217
+      },
+      "fare_rules.txt": {
+        "after": 21,
+        "before": 23,
+        "delta": -2
+      },
+      "routes.txt": {
+        "after": 20,
+        "before": 22,
+        "delta": -2
+      },
+      "shapes.txt": {
+        "after": 21485,
+        "before": 20239,
+        "delta": 1246
+      },
+      "stop_times.txt": {
+        "after": 129412,
+        "before": 130168,
+        "delta": -756
+      },
+      "stops.txt": {
+        "after": 923,
+        "before": 924,
+        "delta": -1
+      },
+      "transfers.txt": {
+        "after": 143,
+        "before": 146,
+        "delta": -3
+      },
+      "trips.txt": {
+        "after": 3563,
+        "before": 3720,
+        "delta": -157
+      }
+    }
+  },
+  "temporal_bounds": {
+    "calendar.end_date.maximum": {
+      "after": "20200523",
+      "before": "20200215"
+    },
+    "calendar.end_date.minimum": {
+      "after": "20200523",
+      "before": "20200215"
+    },
+    "calendar.start_date.maximum": {
+      "after": "20200216",
+      "before": "20190818"
+    },
+    "calendar.start_date.minimum": {
+      "after": "20200216",
+      "before": "20190818"
+    },
+    "calendar_dates.date.maximum": {
+      "after": "20200522",
+      "before": "20200214"
+    },
+    "calendar_dates.date.minimum": {
+      "after": "20200218",
+      "before": "20190818"
+    }
+  }
+}
