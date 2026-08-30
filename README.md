@@ -103,3 +103,21 @@ not establish that the corresponding real-world service or infrastructure was
 removed because publishers may regenerate identifiers between feed versions.
 
 Schema-1 manifests remain readable by the comparator.
+
+## V4 — Route semantic continuity
+
+Route continuity analysis distinguishes identifier churn from apparent
+route-definition continuity.
+
+Two conservative signatures are supported:
+
+- exact equality of the complete `routes.txt` row except `route_id`;
+- exact equality of `agency_id`, `route_short_name`, `route_long_name` and
+  `route_type`.
+
+The analysis does not use fuzzy matching and does not interpret unmatched
+routes as withdrawn services.
+
+In the first real historical evaluation, 20 of 22 old Santa Monica route IDs
+mapped one-to-one to semantically identical new routes despite no route IDs
+persisting between feed versions.

@@ -129,3 +129,41 @@ descriptive attributes.
 
 Do not add fuzzy matching, health scoring, anomaly thresholds or claims of
 service withdrawal until continuity behaviour has been evaluated.
+
+## D-008 — 2026-08-30 — Route semantic continuity resolves apparent ID churn
+
+**Decision:** Retain conservative route semantic-continuity analysis as a
+distinct longitudinal observability capability.
+
+**Real-feed evidence:**
+
+For the Santa Monica / Big Blue Bus historical transition:
+
+- no route IDs persisted;
+- 22 old route IDs disappeared;
+- 20 new route IDs appeared;
+- 20 old/new route pairs are exact matches when `route_id` is excluded from the
+  complete `routes.txt` row;
+- exact semantic continuity covers 20/22 old routes (90.9%);
+- all 20 candidate routes have an exact semantic predecessor (100%);
+- no ambiguous semantic groups occurred;
+- only two baseline routes remain unmatched;
+- the conservative core-field signature yields exactly the same result.
+
+**Interpretation:**
+
+The raw identifier transition substantially overstates underlying route
+change. Twenty apparently removed routes and twenty apparently added routes
+are semantically identical route definitions with regenerated identifiers.
+
+This demonstrates why longitudinal GTFS observability should distinguish:
+
+1. aggregate entity-count change;
+2. raw identifier churn;
+3. semantic continuity.
+
+A removed `route_id` is therefore not evidence of service withdrawal.
+
+The next gate is forensic examination of the two unmatched baseline routes.
+Do not introduce fuzzy matching or infer withdrawal until those cases are
+understood.

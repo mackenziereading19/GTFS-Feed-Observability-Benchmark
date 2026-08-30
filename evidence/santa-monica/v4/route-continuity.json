@@ -1,0 +1,248 @@
+{
+  "baseline": {
+    "filename": "gtfs_20190818-20200215.zip",
+    "route_count": 22
+  },
+  "candidate": {
+    "filename": "gtfs_20200216-20200523.zip",
+    "route_count": 20
+  },
+  "core_continuity": {
+    "ambiguous_groups": [],
+    "definition": "Exact equality of agency_id, route_short_name, route_long_name and route_type.",
+    "fields": [
+      "agency_id",
+      "route_short_name",
+      "route_long_name",
+      "route_type"
+    ],
+    "one_to_one_pairs": [
+      {
+        "new_route_id": "3134",
+        "old_route_id": "3059"
+      },
+      {
+        "new_route_id": "3145",
+        "old_route_id": "3070"
+      },
+      {
+        "new_route_id": "3146",
+        "old_route_id": "3071"
+      },
+      {
+        "new_route_id": "3147",
+        "old_route_id": "3072"
+      },
+      {
+        "new_route_id": "3148",
+        "old_route_id": "3073"
+      },
+      {
+        "new_route_id": "3149",
+        "old_route_id": "3074"
+      },
+      {
+        "new_route_id": "3135",
+        "old_route_id": "3060"
+      },
+      {
+        "new_route_id": "3136",
+        "old_route_id": "3061"
+      },
+      {
+        "new_route_id": "3153",
+        "old_route_id": "3078"
+      },
+      {
+        "new_route_id": "3154",
+        "old_route_id": "3079"
+      },
+      {
+        "new_route_id": "3155",
+        "old_route_id": "3080"
+      },
+      {
+        "new_route_id": "3156",
+        "old_route_id": "3081"
+      },
+      {
+        "new_route_id": "3138",
+        "old_route_id": "3063"
+      },
+      {
+        "new_route_id": "3140",
+        "old_route_id": "3065"
+      },
+      {
+        "new_route_id": "3141",
+        "old_route_id": "3066"
+      },
+      {
+        "new_route_id": "3142",
+        "old_route_id": "3067"
+      },
+      {
+        "new_route_id": "3143",
+        "old_route_id": "3068"
+      },
+      {
+        "new_route_id": "3144",
+        "old_route_id": "3069"
+      },
+      {
+        "new_route_id": "3151",
+        "old_route_id": "3076"
+      },
+      {
+        "new_route_id": "3152",
+        "old_route_id": "3077"
+      }
+    ],
+    "unmatched_new_ids": [],
+    "unmatched_old_ids": [
+      "3075",
+      "3082"
+    ]
+  },
+  "exact_semantic_continuity": {
+    "ambiguous_groups": [],
+    "definition": "Complete routes.txt row equality excluding route_id.",
+    "one_to_one_pairs": [
+      {
+        "new_route_id": "3141",
+        "old_route_id": "3066"
+      },
+      {
+        "new_route_id": "3155",
+        "old_route_id": "3080"
+      },
+      {
+        "new_route_id": "3143",
+        "old_route_id": "3068"
+      },
+      {
+        "new_route_id": "3145",
+        "old_route_id": "3070"
+      },
+      {
+        "new_route_id": "3135",
+        "old_route_id": "3060"
+      },
+      {
+        "new_route_id": "3154",
+        "old_route_id": "3079"
+      },
+      {
+        "new_route_id": "3138",
+        "old_route_id": "3063"
+      },
+      {
+        "new_route_id": "3149",
+        "old_route_id": "3074"
+      },
+      {
+        "new_route_id": "3151",
+        "old_route_id": "3076"
+      },
+      {
+        "new_route_id": "3140",
+        "old_route_id": "3065"
+      },
+      {
+        "new_route_id": "3146",
+        "old_route_id": "3071"
+      },
+      {
+        "new_route_id": "3144",
+        "old_route_id": "3069"
+      },
+      {
+        "new_route_id": "3136",
+        "old_route_id": "3061"
+      },
+      {
+        "new_route_id": "3153",
+        "old_route_id": "3078"
+      },
+      {
+        "new_route_id": "3156",
+        "old_route_id": "3081"
+      },
+      {
+        "new_route_id": "3142",
+        "old_route_id": "3067"
+      },
+      {
+        "new_route_id": "3147",
+        "old_route_id": "3072"
+      },
+      {
+        "new_route_id": "3152",
+        "old_route_id": "3077"
+      },
+      {
+        "new_route_id": "3134",
+        "old_route_id": "3059"
+      },
+      {
+        "new_route_id": "3148",
+        "old_route_id": "3073"
+      }
+    ],
+    "unmatched_new_ids": [],
+    "unmatched_old_ids": [
+      "3075",
+      "3082"
+    ]
+  },
+  "raw_identity": {
+    "added_ids": [
+      "3134",
+      "3135",
+      "3136",
+      "3138",
+      "3140",
+      "3141",
+      "3142",
+      "3143",
+      "3144",
+      "3145",
+      "3146",
+      "3147",
+      "3148",
+      "3149",
+      "3151",
+      "3152",
+      "3153",
+      "3154",
+      "3155",
+      "3156"
+    ],
+    "persisting_ids": [],
+    "removed_ids": [
+      "3059",
+      "3060",
+      "3061",
+      "3063",
+      "3065",
+      "3066",
+      "3067",
+      "3068",
+      "3069",
+      "3070",
+      "3071",
+      "3072",
+      "3073",
+      "3074",
+      "3075",
+      "3076",
+      "3077",
+      "3078",
+      "3079",
+      "3080",
+      "3081",
+      "3082"
+    ]
+  },
+  "schema_version": 1
+}
