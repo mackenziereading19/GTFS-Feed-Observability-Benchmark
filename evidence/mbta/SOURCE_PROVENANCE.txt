@@ -1,0 +1,17 @@
+publisher=Massachusetts Bay Transportation Authority
+archive_documentation=https://github.com/mbta/gtfs-documentation/blob/master/reference/gtfs-archive.md
+archive_index=https://cdn.mbta.com/archive/archived_feeds.txt
+
+baseline_filename=20260623.zip
+baseline_validity=2026-06-23
+baseline_url=https://cdn.mbtace.com/archive/20260623.zip
+baseline_sha256=01b46311b0ea81753bc83c1ca48b736744772378c9ee960d890e1b8e4a9f4c1d
+
+candidate_filename=20260624.zip
+candidate_validity=2026-06-24_through_2026-06-29
+candidate_url=https://cdn.mbtace.com/archive/20260624.zip
+candidate_sha256=faa39af8ef9239003cd3d74b647c821084029efc0fd48aa009f308406b5e8428
+
+retrieved_utc=2026-08-30T22:45:34Z
+
+archive_caveat=MBTA documents that archived feeds may contain retrospective accuracy adjustments and replacement of known erroneous versions. Treat these as official historical archive objects, not necessarily untouched byte-for-byte original publications.

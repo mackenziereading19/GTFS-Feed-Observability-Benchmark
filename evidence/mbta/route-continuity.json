@@ -1,0 +1,3666 @@
+{
+  "baseline": {
+    "filename": "20260623.zip",
+    "route_count": 403
+  },
+  "candidate": {
+    "filename": "20260624.zip",
+    "route_count": 403
+  },
+  "core_continuity": {
+    "ambiguous_groups": [],
+    "definition": "Exact equality of agency_id, route_short_name, route_long_name and route_type.",
+    "fields": [
+      "agency_id",
+      "route_short_name",
+      "route_long_name",
+      "route_type"
+    ],
+    "one_to_one_pairs": [
+      {
+        "new_route_id": "Blue",
+        "old_route_id": "Blue"
+      },
+      {
+        "new_route_id": "Boat-F4",
+        "old_route_id": "Boat-F4"
+      },
+      {
+        "new_route_id": "Boat-EastBoston",
+        "old_route_id": "Boat-EastBoston"
+      },
+      {
+        "new_route_id": "CR-Fairmount",
+        "old_route_id": "CR-Fairmount"
+      },
+      {
+        "new_route_id": "CR-NewBedford",
+        "old_route_id": "CR-NewBedford"
+      },
+      {
+        "new_route_id": "CR-Fitchburg",
+        "old_route_id": "CR-Fitchburg"
+      },
+      {
+        "new_route_id": "CR-Foxboro",
+        "old_route_id": "CR-Foxboro"
+      },
+      {
+        "new_route_id": "CR-Worcester",
+        "old_route_id": "CR-Worcester"
+      },
+      {
+        "new_route_id": "CR-Franklin",
+        "old_route_id": "CR-Franklin"
+      },
+      {
+        "new_route_id": "CR-Greenbush",
+        "old_route_id": "CR-Greenbush"
+      },
+      {
+        "new_route_id": "Boat-F10",
+        "old_route_id": "Boat-F10"
+      },
+      {
+        "new_route_id": "CR-Haverhill",
+        "old_route_id": "CR-Haverhill"
+      },
+      {
+        "new_route_id": "Boat-F1",
+        "old_route_id": "Boat-F1"
+      },
+      {
+        "new_route_id": "Boat-F2H",
+        "old_route_id": "Boat-F2H"
+      },
+      {
+        "new_route_id": "CR-Kingston",
+        "old_route_id": "CR-Kingston"
+      },
+      {
+        "new_route_id": "CR-Lowell",
+        "old_route_id": "CR-Lowell"
+      },
+      {
+        "new_route_id": "Boat-Lynn",
+        "old_route_id": "Boat-Lynn"
+      },
+      {
+        "new_route_id": "Mattapan",
+        "old_route_id": "Mattapan"
+      },
+      {
+        "new_route_id": "CR-Needham",
+        "old_route_id": "CR-Needham"
+      },
+      {
+        "new_route_id": "CR-Newburyport",
+        "old_route_id": "CR-Newburyport"
+      },
+      {
+        "new_route_id": "Orange",
+        "old_route_id": "Orange"
+      },
+      {
+        "new_route_id": "CR-Providence",
+        "old_route_id": "CR-Providence"
+      },
+      {
+        "new_route_id": "Boat-F7",
+        "old_route_id": "Boat-F7"
+      },
+      {
+        "new_route_id": "Red",
+        "old_route_id": "Red"
+      },
+      {
+        "new_route_id": "Boat-F6",
+        "old_route_id": "Boat-F6"
+      },
+      {
+        "new_route_id": "Boat-F8",
+        "old_route_id": "Boat-F8"
+      },
+      {
+        "new_route_id": "1",
+        "old_route_id": "1"
+      },
+      {
+        "new_route_id": "10",
+        "old_route_id": "10"
+      },
+      {
+        "new_route_id": "100",
+        "old_route_id": "100"
+      },
+      {
+        "new_route_id": "101",
+        "old_route_id": "101"
+      },
+      {
+        "new_route_id": "104",
+        "old_route_id": "104"
+      },
+      {
+        "new_route_id": "105",
+        "old_route_id": "105"
+      },
+      {
+        "new_route_id": "106",
+        "old_route_id": "106"
+      },
+      {
+        "new_route_id": "108",
+        "old_route_id": "108"
+      },
+      {
+        "new_route_id": "109",
+        "old_route_id": "109"
+      },
+      {
+        "new_route_id": "11",
+        "old_route_id": "11"
+      },
+      {
+        "new_route_id": "110",
+        "old_route_id": "110"
+      },
+      {
+        "new_route_id": "111",
+        "old_route_id": "111"
+      },
+      {
+        "new_route_id": "112",
+        "old_route_id": "112"
+      },
+      {
+        "new_route_id": "114",
+        "old_route_id": "114"
+      },
+      {
+        "new_route_id": "116",
+        "old_route_id": "116"
+      },
+      {
+        "new_route_id": "119",
+        "old_route_id": "119"
+      },
+      {
+        "new_route_id": "120",
+        "old_route_id": "120"
+      },
+      {
+        "new_route_id": "121",
+        "old_route_id": "121"
+      },
+      {
+        "new_route_id": "131",
+        "old_route_id": "131"
+      },
+      {
+        "new_route_id": "132",
+        "old_route_id": "132"
+      },
+      {
+        "new_route_id": "134",
+        "old_route_id": "134"
+      },
+      {
+        "new_route_id": "137",
+        "old_route_id": "137"
+      },
+      {
+        "new_route_id": "14",
+        "old_route_id": "14"
+      },
+      {
+        "new_route_id": "15",
+        "old_route_id": "15"
+      },
+      {
+        "new_route_id": "16",
+        "old_route_id": "16"
+      },
+      {
+        "new_route_id": "17",
+        "old_route_id": "17"
+      },
+      {
+        "new_route_id": "171",
+        "old_route_id": "171"
+      },
+      {
+        "new_route_id": "18",
+        "old_route_id": "18"
+      },
+      {
+        "new_route_id": "19",
+        "old_route_id": "19"
+      },
+      {
+        "new_route_id": "195",
+        "old_route_id": "195"
+      },
+      {
+        "new_route_id": "201",
+        "old_route_id": "201"
+      },
+      {
+        "new_route_id": "202",
+        "old_route_id": "202"
+      },
+      {
+        "new_route_id": "21",
+        "old_route_id": "21"
+      },
+      {
+        "new_route_id": "210",
+        "old_route_id": "210"
+      },
+      {
+        "new_route_id": "211",
+        "old_route_id": "211"
+      },
+      {
+        "new_route_id": "215",
+        "old_route_id": "215"
+      },
+      {
+        "new_route_id": "216",
+        "old_route_id": "216"
+      },
+      {
+        "new_route_id": "217",
+        "old_route_id": "217"
+      },
+      {
+        "new_route_id": "22",
+        "old_route_id": "22"
+      },
+      {
+        "new_route_id": "220",
+        "old_route_id": "220"
+      },
+      {
+        "new_route_id": "222",
+        "old_route_id": "222"
+      },
+      {
+        "new_route_id": "225",
+        "old_route_id": "225"
+      },
+      {
+        "new_route_id": "226",
+        "old_route_id": "226"
+      },
+      {
+        "new_route_id": "23",
+        "old_route_id": "23"
+      },
+      {
+        "new_route_id": "230",
+        "old_route_id": "230"
+      },
+      {
+        "new_route_id": "236",
+        "old_route_id": "236"
+      },
+      {
+        "new_route_id": "238",
+        "old_route_id": "238"
+      },
+      {
+        "new_route_id": "24",
+        "old_route_id": "24"
+      },
+      {
+        "new_route_id": "240",
+        "old_route_id": "240"
+      },
+      {
+        "new_route_id": "245",
+        "old_route_id": "245"
+      },
+      {
+        "new_route_id": "26",
+        "old_route_id": "26"
+      },
+      {
+        "new_route_id": "28",
+        "old_route_id": "28"
+      },
+      {
+        "new_route_id": "29",
+        "old_route_id": "29"
+      },
+      {
+        "new_route_id": "30",
+        "old_route_id": "30"
+      },
+      {
+        "new_route_id": "31",
+        "old_route_id": "31"
+      },
+      {
+        "new_route_id": "32",
+        "old_route_id": "32"
+      },
+      {
+        "new_route_id": "33",
+        "old_route_id": "33"
+      },
+      {
+        "new_route_id": "34",
+        "old_route_id": "34"
+      },
+      {
+        "new_route_id": "34E",
+        "old_route_id": "34E"
+      },
+      {
+        "new_route_id": "35",
+        "old_route_id": "35"
+      },
+      {
+        "new_route_id": "350",
+        "old_route_id": "350"
+      },
+      {
+        "new_route_id": "351",
+        "old_route_id": "351"
+      },
+      {
+        "new_route_id": "354",
+        "old_route_id": "354"
+      },
+      {
+        "new_route_id": "36",
+        "old_route_id": "36"
+      },
+      {
+        "new_route_id": "37",
+        "old_route_id": "37"
+      },
+      {
+        "new_route_id": "38",
+        "old_route_id": "38"
+      },
+      {
+        "new_route_id": "39",
+        "old_route_id": "39"
+      },
+      {
+        "new_route_id": "4",
+        "old_route_id": "4"
+      },
+      {
+        "new_route_id": "40",
+        "old_route_id": "40"
+      },
+      {
+        "new_route_id": "41",
+        "old_route_id": "41"
+      },
+      {
+        "new_route_id": "411",
+        "old_route_id": "411"
+      },
+      {
+        "new_route_id": "42",
+        "old_route_id": "42"
+      },
+      {
+        "new_route_id": "424",
+        "old_route_id": "424"
+      },
+      {
+        "new_route_id": "426",
+        "old_route_id": "426"
+      },
+      {
+        "new_route_id": "428",
+        "old_route_id": "428"
+      },
+      {
+        "new_route_id": "429",
+        "old_route_id": "429"
+      },
+      {
+        "new_route_id": "43",
+        "old_route_id": "43"
+      },
+      {
+        "new_route_id": "430",
+        "old_route_id": "430"
+      },
+      {
+        "new_route_id": "435",
+        "old_route_id": "435"
+      },
+      {
+        "new_route_id": "436",
+        "old_route_id": "436"
+      },
+      {
+        "new_route_id": "439",
+        "old_route_id": "439"
+      },
+      {
+        "new_route_id": "44",
+        "old_route_id": "44"
+      },
+      {
+        "new_route_id": "441",
+        "old_route_id": "441"
+      },
+      {
+        "new_route_id": "441442",
+        "old_route_id": "441442"
+      },
+      {
+        "new_route_id": "442",
+        "old_route_id": "442"
+      },
+      {
+        "new_route_id": "45",
+        "old_route_id": "45"
+      },
+      {
+        "new_route_id": "450",
+        "old_route_id": "450"
+      },
+      {
+        "new_route_id": "451",
+        "old_route_id": "451"
+      },
+      {
+        "new_route_id": "455",
+        "old_route_id": "455"
+      },
+      {
+        "new_route_id": "456",
+        "old_route_id": "456"
+      },
+      {
+        "new_route_id": "47",
+        "old_route_id": "47"
+      },
+      {
+        "new_route_id": "50",
+        "old_route_id": "50"
+      },
+      {
+        "new_route_id": "501",
+        "old_route_id": "501"
+      },
+      {
+        "new_route_id": "504",
+        "old_route_id": "504"
+      },
+      {
+        "new_route_id": "505",
+        "old_route_id": "505"
+      },
+      {
+        "new_route_id": "51",
+        "old_route_id": "51"
+      },
+      {
+        "new_route_id": "52",
+        "old_route_id": "52"
+      },
+      {
+        "new_route_id": "55",
+        "old_route_id": "55"
+      },
+      {
+        "new_route_id": "553",
+        "old_route_id": "553"
+      },
+      {
+        "new_route_id": "554",
+        "old_route_id": "554"
+      },
+      {
+        "new_route_id": "556",
+        "old_route_id": "556"
+      },
+      {
+        "new_route_id": "558",
+        "old_route_id": "558"
+      },
+      {
+        "new_route_id": "57",
+        "old_route_id": "57"
+      },
+      {
+        "new_route_id": "59",
+        "old_route_id": "59"
+      },
+      {
+        "new_route_id": "60",
+        "old_route_id": "60"
+      },
+      {
+        "new_route_id": "61",
+        "old_route_id": "61"
+      },
+      {
+        "new_route_id": "62",
+        "old_route_id": "62"
+      },
+      {
+        "new_route_id": "64",
+        "old_route_id": "64"
+      },
+      {
+        "new_route_id": "65",
+        "old_route_id": "65"
+      },
+      {
+        "new_route_id": "66",
+        "old_route_id": "66"
+      },
+      {
+        "new_route_id": "67",
+        "old_route_id": "67"
+      },
+      {
+        "new_route_id": "68",
+        "old_route_id": "68"
+      },
+      {
+        "new_route_id": "69",
+        "old_route_id": "69"
+      },
+      {
+        "new_route_id": "7",
+        "old_route_id": "7"
+      },
+      {
+        "new_route_id": "70",
+        "old_route_id": "70"
+      },
+      {
+        "new_route_id": "71",
+        "old_route_id": "71"
+      },
+      {
+        "new_route_id": "712",
+        "old_route_id": "712"
+      },
+      {
+        "new_route_id": "713",
+        "old_route_id": "713"
+      },
+      {
+        "new_route_id": "714",
+        "old_route_id": "714"
+      },
+      {
+        "new_route_id": "716",
+        "old_route_id": "716"
+      },
+      {
+        "new_route_id": "73",
+        "old_route_id": "73"
+      },
+      {
+        "new_route_id": "74",
+        "old_route_id": "74"
+      },
+      {
+        "new_route_id": "75",
+        "old_route_id": "75"
+      },
+      {
+        "new_route_id": "76",
+        "old_route_id": "76"
+      },
+      {
+        "new_route_id": "77",
+        "old_route_id": "77"
+      },
+      {
+        "new_route_id": "78",
+        "old_route_id": "78"
+      },
+      {
+        "new_route_id": "8",
+        "old_route_id": "8"
+      },
+      {
+        "new_route_id": "80",
+        "old_route_id": "80"
+      },
+      {
+        "new_route_id": "83",
+        "old_route_id": "83"
+      },
+      {
+        "new_route_id": "85",
+        "old_route_id": "85"
+      },
+      {
+        "new_route_id": "86",
+        "old_route_id": "86"
+      },
+      {
+        "new_route_id": "87",
+        "old_route_id": "87"
+      },
+      {
+        "new_route_id": "88",
+        "old_route_id": "88"
+      },
+      {
+        "new_route_id": "89",
+        "old_route_id": "89"
+      },
+      {
+        "new_route_id": "8993",
+        "old_route_id": "8993"
+      },
+      {
+        "new_route_id": "9",
+        "old_route_id": "9"
+      },
+      {
+        "new_route_id": "90",
+        "old_route_id": "90"
+      },
+      {
+        "new_route_id": "91",
+        "old_route_id": "91"
+      },
+      {
+        "new_route_id": "92",
+        "old_route_id": "92"
+      },
+      {
+        "new_route_id": "93",
+        "old_route_id": "93"
+      },
+      {
+        "new_route_id": "94",
+        "old_route_id": "94"
+      },
+      {
+        "new_route_id": "95",
+        "old_route_id": "95"
+      },
+      {
+        "new_route_id": "96",
+        "old_route_id": "96"
+      },
+      {
+        "new_route_id": "97",
+        "old_route_id": "97"
+      },
+      {
+        "new_route_id": "99",
+        "old_route_id": "99"
+      },
+      {
+        "new_route_id": "Green-B",
+        "old_route_id": "Green-B"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Blue",
+        "old_route_id": "Shuttle-Generic-Blue"
+      },
+      {
+        "new_route_id": "Shuttle-AirportGovernmentCenterExpress",
+        "old_route_id": "Shuttle-AirportGovernmentCenterExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AirportGovernmentCenterLocal",
+        "old_route_id": "Shuttle-AirportGovernmentCenterLocal"
+      },
+      {
+        "new_route_id": "Shuttle-AirportGovernmentCenterLocalViaGate",
+        "old_route_id": "Shuttle-AirportGovernmentCenterLocalViaGate"
+      },
+      {
+        "new_route_id": "Shuttle-AirportMaverick",
+        "old_route_id": "Shuttle-AirportMaverick"
+      },
+      {
+        "new_route_id": "Shuttle-AirportWonderland",
+        "old_route_id": "Shuttle-AirportWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-HaymarketAirportExpress",
+        "old_route_id": "Shuttle-HaymarketAirportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-HaymarketAirportLocal",
+        "old_route_id": "Shuttle-HaymarketAirportLocal"
+      },
+      {
+        "new_route_id": "Shuttle-HaymarketAirport",
+        "old_route_id": "Shuttle-HaymarketAirport"
+      },
+      {
+        "new_route_id": "Shuttle-MaverickWonderland",
+        "old_route_id": "Shuttle-MaverickWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-OrientHeightsGovernmentCenterExpress",
+        "old_route_id": "Shuttle-OrientHeightsGovernmentCenterExpress"
+      },
+      {
+        "new_route_id": "Shuttle-OrientHeightsGovernmentCenterLocal",
+        "old_route_id": "Shuttle-OrientHeightsGovernmentCenterLocal"
+      },
+      {
+        "new_route_id": "Shuttle-WonderlandAirport",
+        "old_route_id": "Shuttle-WonderlandAirport"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterWonderland",
+        "old_route_id": "Shuttle-GovernmentCenterWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-OrientHeightsWonderland",
+        "old_route_id": "Shuttle-OrientHeightsWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-SuffolkDownsWonderland",
+        "old_route_id": "Shuttle-SuffolkDownsWonderland"
+      },
+      {
+        "new_route_id": "Green-C",
+        "old_route_id": "Green-C"
+      },
+      {
+        "new_route_id": "708",
+        "old_route_id": "708"
+      },
+      {
+        "new_route_id": "Shuttle-CastleIslandJFK",
+        "old_route_id": "Shuttle-CastleIslandJFK"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-CommuterRail",
+        "old_route_id": "Shuttle-Generic-CommuterRail"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeSouthStationExpress",
+        "old_route_id": "Shuttle-BraintreeSouthStationExpress"
+      },
+      {
+        "new_route_id": "Shuttle-CantonJunctionForgePark",
+        "old_route_id": "Shuttle-CantonJunctionForgePark"
+      },
+      {
+        "new_route_id": "Green-D",
+        "old_route_id": "Green-D"
+      },
+      {
+        "new_route_id": "Green-E",
+        "old_route_id": "Green-E"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Elevator",
+        "old_route_id": "Shuttle-Generic-Elevator"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Fairmount",
+        "old_route_id": "Shuttle-Generic-Fairmount"
+      },
+      {
+        "new_route_id": "Shuttle-ReadvilleSouthStation",
+        "old_route_id": "Shuttle-ReadvilleSouthStation"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Fitchburg",
+        "old_route_id": "Shuttle-Generic-Fitchburg"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeLittletonExpress",
+        "old_route_id": "Shuttle-AlewifeLittletonExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeLittletonLocal",
+        "old_route_id": "Shuttle-AlewifeLittletonLocal"
+      },
+      {
+        "new_route_id": "Shuttle-LittletonWachusett",
+        "old_route_id": "Shuttle-LittletonWachusett"
+      },
+      {
+        "new_route_id": "Shuttle-NorthLeominsterWachusett",
+        "old_route_id": "Shuttle-NorthLeominsterWachusett"
+      },
+      {
+        "new_route_id": "Shuttle-ShirleyWachusett",
+        "old_route_id": "Shuttle-ShirleyWachusett"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Worcester",
+        "old_route_id": "Shuttle-Generic-Worcester"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkNorwoodCentral",
+        "old_route_id": "Shuttle-ForgeParkNorwoodCentral"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkReadville",
+        "old_route_id": "Shuttle-ForgeParkReadville"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkSouthStation",
+        "old_route_id": "Shuttle-ForgeParkSouthStation"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkWalpole",
+        "old_route_id": "Shuttle-ForgeParkWalpole"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Franklin",
+        "old_route_id": "Shuttle-Generic-Franklin"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegePackardsCorner",
+        "old_route_id": "Shuttle-BostonCollegePackardsCorner"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-B",
+        "old_route_id": "Shuttle-Generic-Green-B"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockStreetBackBayViaCopley",
+        "old_route_id": "Shuttle-BabcockStreetBackBayViaCopley"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockBackBay",
+        "old_route_id": "Shuttle-BabcockBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockBlandford",
+        "old_route_id": "Shuttle-BabcockBlandford"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockCopley",
+        "old_route_id": "Shuttle-BabcockCopley"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockKenmore",
+        "old_route_id": "Shuttle-BabcockKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockBostonCollege",
+        "old_route_id": "Shuttle-BabcockBostonCollege"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegeBackBay",
+        "old_route_id": "Shuttle-BostonCollegeBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-BlandfordBostonCollege",
+        "old_route_id": "Shuttle-BlandfordBostonCollege"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegeWashington",
+        "old_route_id": "Shuttle-BostonCollegeWashington"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayBostonUniversityEast",
+        "old_route_id": "Shuttle-BackBayBostonUniversityEast"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreBackBayViaCopley",
+        "old_route_id": "Shuttle-KenmoreBackBayViaCopley"
+      },
+      {
+        "new_route_id": "Shuttle-BlandfordWashington",
+        "old_route_id": "Shuttle-BlandfordWashington"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreWashington",
+        "old_route_id": "Shuttle-KenmoreWashington"
+      },
+      {
+        "new_route_id": "Shuttle-ClevelandCircleStMarys",
+        "old_route_id": "Shuttle-ClevelandCircleStMarys"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayStMarys",
+        "old_route_id": "Shuttle-BackBayStMarys"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreStMarysNotFenway",
+        "old_route_id": "Shuttle-KenmoreStMarysNotFenway"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-C",
+        "old_route_id": "Shuttle-Generic-Green-C"
+      },
+      {
+        "new_route_id": "Shuttle-ClevelandCircleCoolidgeCorner",
+        "old_route_id": "Shuttle-ClevelandCircleCoolidgeCorner"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsStMarysKenmore",
+        "old_route_id": "Shuttle-NewtonHighlandsStMarysKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreStMarysRiverside",
+        "old_route_id": "Shuttle-KenmoreStMarysRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-D",
+        "old_route_id": "Shuttle-Generic-Green-D"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsBackBay",
+        "old_route_id": "Shuttle-BrooklineHillsBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsKenmore",
+        "old_route_id": "Shuttle-BrooklineHillsKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayKenmore",
+        "old_route_id": "Shuttle-FenwayKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsNewtonHighlands",
+        "old_route_id": "Shuttle-BrooklineHillsNewtonHighlands"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayNewtonHighlands",
+        "old_route_id": "Shuttle-FenwayNewtonHighlands"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsKenmore",
+        "old_route_id": "Shuttle-NewtonHighlandsKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsReservoir",
+        "old_route_id": "Shuttle-NewtonHighlandsReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsReservoir",
+        "old_route_id": "Shuttle-BrooklineHillsReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayReservoir",
+        "old_route_id": "Shuttle-FenwayReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreReservoir",
+        "old_route_id": "Shuttle-KenmoreReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsRiverside",
+        "old_route_id": "Shuttle-BrooklineHillsRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineVillageRiverside",
+        "old_route_id": "Shuttle-BrooklineVillageRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyRiversideExpress",
+        "old_route_id": "Shuttle-CopleyRiversideExpress"
+      },
+      {
+        "new_route_id": "Shuttle-RiversideCopley",
+        "old_route_id": "Shuttle-RiversideCopley"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyRiversideLimited",
+        "old_route_id": "Shuttle-CopleyRiversideLimited"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayRiverside",
+        "old_route_id": "Shuttle-FenwayRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-RiversideKenmore",
+        "old_route_id": "Shuttle-RiversideKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreRiverside",
+        "old_route_id": "Shuttle-KenmoreRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsRiverside",
+        "old_route_id": "Shuttle-NewtonHighlandsRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-ReservoirRiverside",
+        "old_route_id": "Shuttle-ReservoirRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyWoodlandLimited",
+        "old_route_id": "Shuttle-CopleyWoodlandLimited"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-E",
+        "old_route_id": "Shuttle-Generic-Green-E"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterMedfordTufts",
+        "old_route_id": "Shuttle-GovernmentCenterMedfordTufts"
+      },
+      {
+        "new_route_id": "Shuttle-HeathPark",
+        "old_route_id": "Shuttle-HeathPark"
+      },
+      {
+        "new_route_id": "Shuttle-HeathPrudential",
+        "old_route_id": "Shuttle-HeathPrudential"
+      },
+      {
+        "new_route_id": "Shuttle-EastSomervilleMedford",
+        "old_route_id": "Shuttle-EastSomervilleMedford"
+      },
+      {
+        "new_route_id": "Shuttle-MedfordNorthStation",
+        "old_route_id": "Shuttle-MedfordNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationMedfordTufts",
+        "old_route_id": "Shuttle-NorthStationMedfordTufts"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green",
+        "old_route_id": "Shuttle-Generic-Green"
+      },
+      {
+        "new_route_id": "Shuttle-BostonUniversityEastPark",
+        "old_route_id": "Shuttle-BostonUniversityEastPark"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayKenmore",
+        "old_route_id": "Shuttle-BackBayKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyKenmore",
+        "old_route_id": "Shuttle-CopleyKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-LechmereNorthStation",
+        "old_route_id": "Shuttle-LechmereNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterMedfordViaUnionSq",
+        "old_route_id": "Shuttle-GovernmentCenterMedfordViaUnionSq"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterNorthStation",
+        "old_route_id": "Shuttle-GovernmentCenterNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationSullivanSquare",
+        "old_route_id": "Shuttle-NorthStationSullivanSquare"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterUnionSquare",
+        "old_route_id": "Shuttle-GovernmentCenterUnionSquare"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationUnionSquare",
+        "old_route_id": "Shuttle-NorthStationUnionSquare"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-Trunk",
+        "old_route_id": "Shuttle-Generic-Green-Trunk"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Greenbush",
+        "old_route_id": "Shuttle-Generic-Greenbush"
+      },
+      {
+        "new_route_id": "Shuttle-GreenbushNorthScituate",
+        "old_route_id": "Shuttle-GreenbushNorthScituate"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Haverhill",
+        "old_route_id": "Shuttle-Generic-Haverhill"
+      },
+      {
+        "new_route_id": "Shuttle-BallardvaleMaldenCenter",
+        "old_route_id": "Shuttle-BallardvaleMaldenCenter"
+      },
+      {
+        "new_route_id": "Shuttle-BallardvaleNorthStation",
+        "old_route_id": "Shuttle-BallardvaleNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-AndoverHaverhill",
+        "old_route_id": "Shuttle-AndoverHaverhill"
+      },
+      {
+        "new_route_id": "Shuttle-BradfordHaverhill",
+        "old_route_id": "Shuttle-BradfordHaverhill"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillMaldenCenter",
+        "old_route_id": "Shuttle-HaverhillMaldenCenter"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillNorthStation",
+        "old_route_id": "Shuttle-HaverhillNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillReadingExpress",
+        "old_route_id": "Shuttle-HaverhillReadingExpress"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillReadingLocal",
+        "old_route_id": "Shuttle-HaverhillReadingLocal"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnReading",
+        "old_route_id": "Shuttle-AndersonWoburnReading"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveReading",
+        "old_route_id": "Shuttle-OakGroveReading"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Kingston",
+        "old_route_id": "Shuttle-Generic-Kingston"
+      },
+      {
+        "new_route_id": "Shuttle-HalifaxKingston",
+        "old_route_id": "Shuttle-HalifaxKingston"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeSouthWeymouth",
+        "old_route_id": "Shuttle-BraintreeSouthWeymouth"
+      },
+      {
+        "new_route_id": "Shuttle-SouthStationSouthWeymouth",
+        "old_route_id": "Shuttle-SouthStationSouthWeymouth"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Lowell",
+        "old_route_id": "Shuttle-Generic-Lowell"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnNorthStationExpress",
+        "old_route_id": "Shuttle-AndersonWoburnNorthStationExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnNorthStationLocal",
+        "old_route_id": "Shuttle-AndersonWoburnNorthStationLocal"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnLowell",
+        "old_route_id": "Shuttle-AndersonWoburnLowell"
+      },
+      {
+        "new_route_id": "Shuttle-NorthBillericaLowell",
+        "old_route_id": "Shuttle-NorthBillericaLowell"
+      },
+      {
+        "new_route_id": "Shuttle-LowellWilmington",
+        "old_route_id": "Shuttle-LowellWilmington"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Mattapan",
+        "old_route_id": "Shuttle-Generic-Mattapan"
+      },
+      {
+        "new_route_id": "Shuttle-MattapanAshmont",
+        "old_route_id": "Shuttle-MattapanAshmont"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontMattapan",
+        "old_route_id": "Shuttle-AshmontMattapan"
+      },
+      {
+        "new_route_id": "Shuttle-NavyYardSullivan",
+        "old_route_id": "Shuttle-NavyYardSullivan"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Needham",
+        "old_route_id": "Shuttle-Generic-Needham"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsNeedhamHeights",
+        "old_route_id": "Shuttle-ForestHillsNeedhamHeights"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsNewtonHighlands",
+        "old_route_id": "Shuttle-ForestHillsNewtonHighlands"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyNewburyportExpress",
+        "old_route_id": "Shuttle-BeverlyNewburyportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyNewburyportLocal",
+        "old_route_id": "Shuttle-BeverlyNewburyportLocal"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportOakGroveExpress",
+        "old_route_id": "Shuttle-NewburyportOakGroveExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportOakGroveLimited",
+        "old_route_id": "Shuttle-NewburyportOakGroveLimited"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportSalemExpress",
+        "old_route_id": "Shuttle-NewburyportSalemExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportSalemLocal",
+        "old_route_id": "Shuttle-NewburyportSalemLocal"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveRockportExpress",
+        "old_route_id": "Shuttle-OakGroveRockportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveRockportLimited",
+        "old_route_id": "Shuttle-OakGroveRockportLimited"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveSalemLocal",
+        "old_route_id": "Shuttle-OakGroveSalemLocal"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Newburyport",
+        "old_route_id": "Shuttle-Generic-Newburyport"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyNorthStationLimited",
+        "old_route_id": "Shuttle-BeverlyNorthStationLimited"
+      },
+      {
+        "new_route_id": "Shuttle-ChelseaLynn",
+        "old_route_id": "Shuttle-ChelseaLynn"
+      },
+      {
+        "new_route_id": "Shuttle-LynnNorthStationExpress",
+        "old_route_id": "Shuttle-LynnNorthStationExpress"
+      },
+      {
+        "new_route_id": "Shuttle-LynnSwampscott",
+        "old_route_id": "Shuttle-LynnSwampscott"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationSwampscottLimited",
+        "old_route_id": "Shuttle-NorthStationSwampscottLimited"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-CommuterRail-North",
+        "old_route_id": "Shuttle-Generic-CommuterRail-North"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Orange",
+        "old_route_id": "Shuttle-Generic-Orange"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsBackBay",
+        "old_route_id": "Shuttle-ForestHillsBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsBackBayViaCopley",
+        "old_route_id": "Shuttle-ForestHillsBackBayViaCopley"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsBackBayViaRugglesBusway",
+        "old_route_id": "Shuttle-ForestHillsBackBayViaRugglesBusway"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyForestHills",
+        "old_route_id": "Shuttle-CopleyForestHills"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsJacksonSquare",
+        "old_route_id": "Shuttle-ForestHillsJacksonSquare"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsJackson",
+        "old_route_id": "Shuttle-ForestHillsJackson"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsRuggles",
+        "old_route_id": "Shuttle-ForestHillsRuggles"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayJackson",
+        "old_route_id": "Shuttle-BackBayJackson"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyJacksonSquare",
+        "old_route_id": "Shuttle-CopleyJacksonSquare"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationOakGroveExpress",
+        "old_route_id": "Shuttle-NorthStationOakGroveExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationOakGroveLocal",
+        "old_route_id": "Shuttle-NorthStationOakGroveLocal"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationWellingtonExpress",
+        "old_route_id": "Shuttle-NorthStationWellingtonExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationWellingtonLocal",
+        "old_route_id": "Shuttle-NorthStationWellingtonLocal"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayRuggles",
+        "old_route_id": "Shuttle-BackBayRuggles"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyRuggles",
+        "old_route_id": "Shuttle-CopleyRuggles"
+      },
+      {
+        "new_route_id": "Shuttle-StateSullivan",
+        "old_route_id": "Shuttle-StateSullivan"
+      },
+      {
+        "new_route_id": "Shuttle-AttleboroProvidenceExpress",
+        "old_route_id": "Shuttle-AttleboroProvidenceExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AttleboroProvidenceLocal",
+        "old_route_id": "Shuttle-AttleboroProvidenceLocal"
+      },
+      {
+        "new_route_id": "Shuttle-PawtucketProvidence",
+        "old_route_id": "Shuttle-PawtucketProvidence"
+      },
+      {
+        "new_route_id": "Shuttle-TFGreenWickfordJunction",
+        "old_route_id": "Shuttle-TFGreenWickfordJunction"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Providence",
+        "old_route_id": "Shuttle-Generic-Providence"
+      },
+      {
+        "new_route_id": "Shuttle-CantonJunctionStoughton",
+        "old_route_id": "Shuttle-CantonJunctionStoughton"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red-Ashmont",
+        "old_route_id": "Shuttle-Generic-Red-Ashmont"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red-Braintree",
+        "old_route_id": "Shuttle-Generic-Red-Braintree"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red",
+        "old_route_id": "Shuttle-Generic-Red"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeDavis",
+        "old_route_id": "Shuttle-AlewifeDavis"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeHarvardViaBrattle",
+        "old_route_id": "Shuttle-AlewifeHarvardViaBrattle"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeHarvardViaHolyoke",
+        "old_route_id": "Shuttle-AlewifeHarvardViaHolyoke"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeKendallExpress",
+        "old_route_id": "Shuttle-AlewifeKendallExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeKendall",
+        "old_route_id": "Shuttle-AlewifeKendall"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeParkSt",
+        "old_route_id": "Shuttle-AlewifeParkSt"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontBraintree",
+        "old_route_id": "Shuttle-AshmontBraintree"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontBroadway",
+        "old_route_id": "Shuttle-AshmontBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontJFKUMass",
+        "old_route_id": "Shuttle-AshmontJFKUMass"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontJFK",
+        "old_route_id": "Shuttle-AshmontJFK"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontParkStreetViaPostOffice",
+        "old_route_id": "Shuttle-AshmontParkStreetViaPostOffice"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeBroadway",
+        "old_route_id": "Shuttle-BraintreeBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeJFKUMass",
+        "old_route_id": "Shuttle-BraintreeJFKUMass"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeNorthQuincy",
+        "old_route_id": "Shuttle-BraintreeNorthQuincy"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeQuincyCenter",
+        "old_route_id": "Shuttle-BraintreeQuincyCenter"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayHarvard",
+        "old_route_id": "Shuttle-BroadwayHarvard"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardJFK",
+        "old_route_id": "Shuttle-HarvardJFK"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardJFKOmitCongress",
+        "old_route_id": "Shuttle-HarvardJFKOmitCongress"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardKendall",
+        "old_route_id": "Shuttle-HarvardKendall"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardPark",
+        "old_route_id": "Shuttle-HarvardPark"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardSouthStation",
+        "old_route_id": "Shuttle-HarvardSouthStation"
+      },
+      {
+        "new_route_id": "Shuttle-JFKUMassBroadway",
+        "old_route_id": "Shuttle-JFKUMassBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayJFK",
+        "old_route_id": "Shuttle-BroadwayJFK"
+      },
+      {
+        "new_route_id": "Shuttle-JFKUMassKendallMIT",
+        "old_route_id": "Shuttle-JFKUMassKendallMIT"
+      },
+      {
+        "new_route_id": "Shuttle-JFKParkStreetViaPostOffice",
+        "old_route_id": "Shuttle-JFKParkStreetViaPostOffice"
+      },
+      {
+        "new_route_id": "Shuttle-JFKPark",
+        "old_route_id": "Shuttle-JFKPark"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayKendall",
+        "old_route_id": "Shuttle-BroadwayKendall"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayKendallOmitDTX",
+        "old_route_id": "Shuttle-BroadwayKendallOmitDTX"
+      },
+      {
+        "new_route_id": "Shuttle-JFKKendall",
+        "old_route_id": "Shuttle-JFKKendall"
+      },
+      {
+        "new_route_id": "Shuttle-KendallPark",
+        "old_route_id": "Shuttle-KendallPark"
+      },
+      {
+        "new_route_id": "Shuttle-NorthQuincyBroadway",
+        "old_route_id": "Shuttle-NorthQuincyBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayNorthQuincy",
+        "old_route_id": "Shuttle-BroadwayNorthQuincy"
+      },
+      {
+        "new_route_id": "Shuttle-JFKNorthQuincy",
+        "old_route_id": "Shuttle-JFKNorthQuincy"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayQuincyCenterExpress",
+        "old_route_id": "Shuttle-BroadwayQuincyCenterExpress"
+      },
+      {
+        "new_route_id": "Shuttle-QuincyCenterBroadway",
+        "old_route_id": "Shuttle-QuincyCenterBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red-Trunk",
+        "old_route_id": "Shuttle-Generic-Red-Trunk"
+      },
+      {
+        "new_route_id": "Shuttle-JFKMattapan",
+        "old_route_id": "Shuttle-JFKMattapan"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyRockportExpress",
+        "old_route_id": "Shuttle-BeverlyRockportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyRockportLocal",
+        "old_route_id": "Shuttle-BeverlyRockportLocal"
+      },
+      {
+        "new_route_id": "Shuttle-ManchesterGloucester",
+        "old_route_id": "Shuttle-ManchesterGloucester"
+      },
+      {
+        "new_route_id": "Shuttle-ManchesterRockport",
+        "old_route_id": "Shuttle-ManchesterRockport"
+      },
+      {
+        "new_route_id": "Shuttle-RockportSalemExpress",
+        "old_route_id": "Shuttle-RockportSalemExpress"
+      },
+      {
+        "new_route_id": "Shuttle-RockportSalemLocal",
+        "old_route_id": "Shuttle-RockportSalemLocal"
+      },
+      {
+        "new_route_id": "Shuttle-RockportWestGloucester",
+        "old_route_id": "Shuttle-RockportWestGloucester"
+      },
+      {
+        "new_route_id": "741",
+        "old_route_id": "741"
+      },
+      {
+        "new_route_id": "742",
+        "old_route_id": "742"
+      },
+      {
+        "new_route_id": "743",
+        "old_route_id": "743"
+      },
+      {
+        "new_route_id": "751",
+        "old_route_id": "751"
+      },
+      {
+        "new_route_id": "749",
+        "old_route_id": "749"
+      },
+      {
+        "new_route_id": "746",
+        "old_route_id": "746"
+      },
+      {
+        "new_route_id": "Shuttle-Generic",
+        "old_route_id": "Shuttle-Generic"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegeKenmore",
+        "old_route_id": "Shuttle-BostonCollegeKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-ClevelandCircleKenmore",
+        "old_route_id": "Shuttle-ClevelandCircleKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-CommuterRail-South",
+        "old_route_id": "Shuttle-Generic-CommuterRail-South"
+      },
+      {
+        "new_route_id": "Shuttle-AshlandFramingham",
+        "old_route_id": "Shuttle-AshlandFramingham"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayBostonLanding",
+        "old_route_id": "Shuttle-BackBayBostonLanding"
+      },
+      {
+        "new_route_id": "Shuttle-BostonLandingSouthStationExpress",
+        "old_route_id": "Shuttle-BostonLandingSouthStationExpress"
+      },
+      {
+        "new_route_id": "CapeFlyer",
+        "old_route_id": "CapeFlyer"
+      }
+    ],
+    "unmatched_new_ids": [],
+    "unmatched_old_ids": []
+  },
+  "exact_semantic_continuity": {
+    "ambiguous_groups": [],
+    "definition": "Complete routes.txt row equality excluding route_id.",
+    "one_to_one_pairs": [
+      {
+        "new_route_id": "Shuttle-Generic-CommuterRail",
+        "old_route_id": "Shuttle-Generic-CommuterRail"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Elevator",
+        "old_route_id": "Shuttle-Generic-Elevator"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-CommuterRail-North",
+        "old_route_id": "Shuttle-Generic-CommuterRail-North"
+      },
+      {
+        "new_route_id": "Shuttle-Generic",
+        "old_route_id": "Shuttle-Generic"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-CommuterRail-South",
+        "old_route_id": "Shuttle-Generic-CommuterRail-South"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegeKenmore",
+        "old_route_id": "Shuttle-BostonCollegeKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-ClevelandCircleKenmore",
+        "old_route_id": "Shuttle-ClevelandCircleKenmore"
+      },
+      {
+        "new_route_id": "1",
+        "old_route_id": "1"
+      },
+      {
+        "new_route_id": "10",
+        "old_route_id": "10"
+      },
+      {
+        "new_route_id": "100",
+        "old_route_id": "100"
+      },
+      {
+        "new_route_id": "101",
+        "old_route_id": "101"
+      },
+      {
+        "new_route_id": "104",
+        "old_route_id": "104"
+      },
+      {
+        "new_route_id": "105",
+        "old_route_id": "105"
+      },
+      {
+        "new_route_id": "106",
+        "old_route_id": "106"
+      },
+      {
+        "new_route_id": "108",
+        "old_route_id": "108"
+      },
+      {
+        "new_route_id": "109",
+        "old_route_id": "109"
+      },
+      {
+        "new_route_id": "11",
+        "old_route_id": "11"
+      },
+      {
+        "new_route_id": "110",
+        "old_route_id": "110"
+      },
+      {
+        "new_route_id": "111",
+        "old_route_id": "111"
+      },
+      {
+        "new_route_id": "112",
+        "old_route_id": "112"
+      },
+      {
+        "new_route_id": "116",
+        "old_route_id": "116"
+      },
+      {
+        "new_route_id": "114",
+        "old_route_id": "114"
+      },
+      {
+        "new_route_id": "119",
+        "old_route_id": "119"
+      },
+      {
+        "new_route_id": "121",
+        "old_route_id": "121"
+      },
+      {
+        "new_route_id": "120",
+        "old_route_id": "120"
+      },
+      {
+        "new_route_id": "131",
+        "old_route_id": "131"
+      },
+      {
+        "new_route_id": "132",
+        "old_route_id": "132"
+      },
+      {
+        "new_route_id": "134",
+        "old_route_id": "134"
+      },
+      {
+        "new_route_id": "137",
+        "old_route_id": "137"
+      },
+      {
+        "new_route_id": "14",
+        "old_route_id": "14"
+      },
+      {
+        "new_route_id": "15",
+        "old_route_id": "15"
+      },
+      {
+        "new_route_id": "16",
+        "old_route_id": "16"
+      },
+      {
+        "new_route_id": "708",
+        "old_route_id": "708"
+      },
+      {
+        "new_route_id": "171",
+        "old_route_id": "171"
+      },
+      {
+        "new_route_id": "17",
+        "old_route_id": "17"
+      },
+      {
+        "new_route_id": "19",
+        "old_route_id": "19"
+      },
+      {
+        "new_route_id": "18",
+        "old_route_id": "18"
+      },
+      {
+        "new_route_id": "195",
+        "old_route_id": "195"
+      },
+      {
+        "new_route_id": "202",
+        "old_route_id": "202"
+      },
+      {
+        "new_route_id": "201",
+        "old_route_id": "201"
+      },
+      {
+        "new_route_id": "21",
+        "old_route_id": "21"
+      },
+      {
+        "new_route_id": "210",
+        "old_route_id": "210"
+      },
+      {
+        "new_route_id": "211",
+        "old_route_id": "211"
+      },
+      {
+        "new_route_id": "216",
+        "old_route_id": "216"
+      },
+      {
+        "new_route_id": "215",
+        "old_route_id": "215"
+      },
+      {
+        "new_route_id": "217",
+        "old_route_id": "217"
+      },
+      {
+        "new_route_id": "245",
+        "old_route_id": "245"
+      },
+      {
+        "new_route_id": "22",
+        "old_route_id": "22"
+      },
+      {
+        "new_route_id": "222",
+        "old_route_id": "222"
+      },
+      {
+        "new_route_id": "220",
+        "old_route_id": "220"
+      },
+      {
+        "new_route_id": "226",
+        "old_route_id": "226"
+      },
+      {
+        "new_route_id": "225",
+        "old_route_id": "225"
+      },
+      {
+        "new_route_id": "23",
+        "old_route_id": "23"
+      },
+      {
+        "new_route_id": "230",
+        "old_route_id": "230"
+      },
+      {
+        "new_route_id": "236",
+        "old_route_id": "236"
+      },
+      {
+        "new_route_id": "238",
+        "old_route_id": "238"
+      },
+      {
+        "new_route_id": "240",
+        "old_route_id": "240"
+      },
+      {
+        "new_route_id": "33",
+        "old_route_id": "33"
+      },
+      {
+        "new_route_id": "24",
+        "old_route_id": "24"
+      },
+      {
+        "new_route_id": "26",
+        "old_route_id": "26"
+      },
+      {
+        "new_route_id": "28",
+        "old_route_id": "28"
+      },
+      {
+        "new_route_id": "29",
+        "old_route_id": "29"
+      },
+      {
+        "new_route_id": "30",
+        "old_route_id": "30"
+      },
+      {
+        "new_route_id": "31",
+        "old_route_id": "31"
+      },
+      {
+        "new_route_id": "32",
+        "old_route_id": "32"
+      },
+      {
+        "new_route_id": "34",
+        "old_route_id": "34"
+      },
+      {
+        "new_route_id": "34E",
+        "old_route_id": "34E"
+      },
+      {
+        "new_route_id": "35",
+        "old_route_id": "35"
+      },
+      {
+        "new_route_id": "351",
+        "old_route_id": "351"
+      },
+      {
+        "new_route_id": "350",
+        "old_route_id": "350"
+      },
+      {
+        "new_route_id": "354",
+        "old_route_id": "354"
+      },
+      {
+        "new_route_id": "36",
+        "old_route_id": "36"
+      },
+      {
+        "new_route_id": "37",
+        "old_route_id": "37"
+      },
+      {
+        "new_route_id": "38",
+        "old_route_id": "38"
+      },
+      {
+        "new_route_id": "39",
+        "old_route_id": "39"
+      },
+      {
+        "new_route_id": "4",
+        "old_route_id": "4"
+      },
+      {
+        "new_route_id": "50",
+        "old_route_id": "50"
+      },
+      {
+        "new_route_id": "40",
+        "old_route_id": "40"
+      },
+      {
+        "new_route_id": "41",
+        "old_route_id": "41"
+      },
+      {
+        "new_route_id": "411",
+        "old_route_id": "411"
+      },
+      {
+        "new_route_id": "430",
+        "old_route_id": "430"
+      },
+      {
+        "new_route_id": "42",
+        "old_route_id": "42"
+      },
+      {
+        "new_route_id": "450",
+        "old_route_id": "450"
+      },
+      {
+        "new_route_id": "424",
+        "old_route_id": "424"
+      },
+      {
+        "new_route_id": "456",
+        "old_route_id": "456"
+      },
+      {
+        "new_route_id": "428",
+        "old_route_id": "428"
+      },
+      {
+        "new_route_id": "426",
+        "old_route_id": "426"
+      },
+      {
+        "new_route_id": "429",
+        "old_route_id": "429"
+      },
+      {
+        "new_route_id": "43",
+        "old_route_id": "43"
+      },
+      {
+        "new_route_id": "436",
+        "old_route_id": "436"
+      },
+      {
+        "new_route_id": "435",
+        "old_route_id": "435"
+      },
+      {
+        "new_route_id": "439",
+        "old_route_id": "439"
+      },
+      {
+        "new_route_id": "442",
+        "old_route_id": "442"
+      },
+      {
+        "new_route_id": "441",
+        "old_route_id": "441"
+      },
+      {
+        "new_route_id": "441442",
+        "old_route_id": "441442"
+      },
+      {
+        "new_route_id": "44",
+        "old_route_id": "44"
+      },
+      {
+        "new_route_id": "45",
+        "old_route_id": "45"
+      },
+      {
+        "new_route_id": "451",
+        "old_route_id": "451"
+      },
+      {
+        "new_route_id": "455",
+        "old_route_id": "455"
+      },
+      {
+        "new_route_id": "47",
+        "old_route_id": "47"
+      },
+      {
+        "new_route_id": "501",
+        "old_route_id": "501"
+      },
+      {
+        "new_route_id": "504",
+        "old_route_id": "504"
+      },
+      {
+        "new_route_id": "505",
+        "old_route_id": "505"
+      },
+      {
+        "new_route_id": "554",
+        "old_route_id": "554"
+      },
+      {
+        "new_route_id": "553",
+        "old_route_id": "553"
+      },
+      {
+        "new_route_id": "51",
+        "old_route_id": "51"
+      },
+      {
+        "new_route_id": "52",
+        "old_route_id": "52"
+      },
+      {
+        "new_route_id": "59",
+        "old_route_id": "59"
+      },
+      {
+        "new_route_id": "55",
+        "old_route_id": "55"
+      },
+      {
+        "new_route_id": "558",
+        "old_route_id": "558"
+      },
+      {
+        "new_route_id": "556",
+        "old_route_id": "556"
+      },
+      {
+        "new_route_id": "57",
+        "old_route_id": "57"
+      },
+      {
+        "new_route_id": "65",
+        "old_route_id": "65"
+      },
+      {
+        "new_route_id": "60",
+        "old_route_id": "60"
+      },
+      {
+        "new_route_id": "70",
+        "old_route_id": "70"
+      },
+      {
+        "new_route_id": "61",
+        "old_route_id": "61"
+      },
+      {
+        "new_route_id": "62",
+        "old_route_id": "62"
+      },
+      {
+        "new_route_id": "76",
+        "old_route_id": "76"
+      },
+      {
+        "new_route_id": "68",
+        "old_route_id": "68"
+      },
+      {
+        "new_route_id": "64",
+        "old_route_id": "64"
+      },
+      {
+        "new_route_id": "66",
+        "old_route_id": "66"
+      },
+      {
+        "new_route_id": "67",
+        "old_route_id": "67"
+      },
+      {
+        "new_route_id": "69",
+        "old_route_id": "69"
+      },
+      {
+        "new_route_id": "7",
+        "old_route_id": "7"
+      },
+      {
+        "new_route_id": "71",
+        "old_route_id": "71"
+      },
+      {
+        "new_route_id": "712",
+        "old_route_id": "712"
+      },
+      {
+        "new_route_id": "713",
+        "old_route_id": "713"
+      },
+      {
+        "new_route_id": "714",
+        "old_route_id": "714"
+      },
+      {
+        "new_route_id": "716",
+        "old_route_id": "716"
+      },
+      {
+        "new_route_id": "74",
+        "old_route_id": "74"
+      },
+      {
+        "new_route_id": "75",
+        "old_route_id": "75"
+      },
+      {
+        "new_route_id": "73",
+        "old_route_id": "73"
+      },
+      {
+        "new_route_id": "77",
+        "old_route_id": "77"
+      },
+      {
+        "new_route_id": "78",
+        "old_route_id": "78"
+      },
+      {
+        "new_route_id": "8",
+        "old_route_id": "8"
+      },
+      {
+        "new_route_id": "80",
+        "old_route_id": "80"
+      },
+      {
+        "new_route_id": "83",
+        "old_route_id": "83"
+      },
+      {
+        "new_route_id": "85",
+        "old_route_id": "85"
+      },
+      {
+        "new_route_id": "86",
+        "old_route_id": "86"
+      },
+      {
+        "new_route_id": "87",
+        "old_route_id": "87"
+      },
+      {
+        "new_route_id": "88",
+        "old_route_id": "88"
+      },
+      {
+        "new_route_id": "89",
+        "old_route_id": "89"
+      },
+      {
+        "new_route_id": "8993",
+        "old_route_id": "8993"
+      },
+      {
+        "new_route_id": "9",
+        "old_route_id": "9"
+      },
+      {
+        "new_route_id": "90",
+        "old_route_id": "90"
+      },
+      {
+        "new_route_id": "91",
+        "old_route_id": "91"
+      },
+      {
+        "new_route_id": "92",
+        "old_route_id": "92"
+      },
+      {
+        "new_route_id": "93",
+        "old_route_id": "93"
+      },
+      {
+        "new_route_id": "94",
+        "old_route_id": "94"
+      },
+      {
+        "new_route_id": "95",
+        "old_route_id": "95"
+      },
+      {
+        "new_route_id": "96",
+        "old_route_id": "96"
+      },
+      {
+        "new_route_id": "97",
+        "old_route_id": "97"
+      },
+      {
+        "new_route_id": "99",
+        "old_route_id": "99"
+      },
+      {
+        "new_route_id": "Blue",
+        "old_route_id": "Blue"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Blue",
+        "old_route_id": "Shuttle-Generic-Blue"
+      },
+      {
+        "new_route_id": "Shuttle-AirportGovernmentCenterExpress",
+        "old_route_id": "Shuttle-AirportGovernmentCenterExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AirportGovernmentCenterLocal",
+        "old_route_id": "Shuttle-AirportGovernmentCenterLocal"
+      },
+      {
+        "new_route_id": "Shuttle-AirportGovernmentCenterLocalViaGate",
+        "old_route_id": "Shuttle-AirportGovernmentCenterLocalViaGate"
+      },
+      {
+        "new_route_id": "Shuttle-AirportMaverick",
+        "old_route_id": "Shuttle-AirportMaverick"
+      },
+      {
+        "new_route_id": "Shuttle-AirportWonderland",
+        "old_route_id": "Shuttle-AirportWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-HaymarketAirportExpress",
+        "old_route_id": "Shuttle-HaymarketAirportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-HaymarketAirportLocal",
+        "old_route_id": "Shuttle-HaymarketAirportLocal"
+      },
+      {
+        "new_route_id": "Shuttle-HaymarketAirport",
+        "old_route_id": "Shuttle-HaymarketAirport"
+      },
+      {
+        "new_route_id": "Shuttle-MaverickWonderland",
+        "old_route_id": "Shuttle-MaverickWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-OrientHeightsGovernmentCenterExpress",
+        "old_route_id": "Shuttle-OrientHeightsGovernmentCenterExpress"
+      },
+      {
+        "new_route_id": "Shuttle-OrientHeightsGovernmentCenterLocal",
+        "old_route_id": "Shuttle-OrientHeightsGovernmentCenterLocal"
+      },
+      {
+        "new_route_id": "Shuttle-WonderlandAirport",
+        "old_route_id": "Shuttle-WonderlandAirport"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterWonderland",
+        "old_route_id": "Shuttle-GovernmentCenterWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-OrientHeightsWonderland",
+        "old_route_id": "Shuttle-OrientHeightsWonderland"
+      },
+      {
+        "new_route_id": "Shuttle-SuffolkDownsWonderland",
+        "old_route_id": "Shuttle-SuffolkDownsWonderland"
+      },
+      {
+        "new_route_id": "Boat-EastBoston",
+        "old_route_id": "Boat-EastBoston"
+      },
+      {
+        "new_route_id": "Boat-F1",
+        "old_route_id": "Boat-F1"
+      },
+      {
+        "new_route_id": "Boat-F10",
+        "old_route_id": "Boat-F10"
+      },
+      {
+        "new_route_id": "Boat-F2H",
+        "old_route_id": "Boat-F2H"
+      },
+      {
+        "new_route_id": "Boat-F4",
+        "old_route_id": "Boat-F4"
+      },
+      {
+        "new_route_id": "Boat-F6",
+        "old_route_id": "Boat-F6"
+      },
+      {
+        "new_route_id": "Boat-F7",
+        "old_route_id": "Boat-F7"
+      },
+      {
+        "new_route_id": "Boat-F8",
+        "old_route_id": "Boat-F8"
+      },
+      {
+        "new_route_id": "Boat-Lynn",
+        "old_route_id": "Boat-Lynn"
+      },
+      {
+        "new_route_id": "CR-Fairmount",
+        "old_route_id": "CR-Fairmount"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Fairmount",
+        "old_route_id": "Shuttle-Generic-Fairmount"
+      },
+      {
+        "new_route_id": "Shuttle-ReadvilleSouthStation",
+        "old_route_id": "Shuttle-ReadvilleSouthStation"
+      },
+      {
+        "new_route_id": "CR-Fitchburg",
+        "old_route_id": "CR-Fitchburg"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Fitchburg",
+        "old_route_id": "Shuttle-Generic-Fitchburg"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeLittletonExpress",
+        "old_route_id": "Shuttle-AlewifeLittletonExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeLittletonLocal",
+        "old_route_id": "Shuttle-AlewifeLittletonLocal"
+      },
+      {
+        "new_route_id": "Shuttle-LittletonWachusett",
+        "old_route_id": "Shuttle-LittletonWachusett"
+      },
+      {
+        "new_route_id": "Shuttle-NorthLeominsterWachusett",
+        "old_route_id": "Shuttle-NorthLeominsterWachusett"
+      },
+      {
+        "new_route_id": "Shuttle-ShirleyWachusett",
+        "old_route_id": "Shuttle-ShirleyWachusett"
+      },
+      {
+        "new_route_id": "CR-Foxboro",
+        "old_route_id": "CR-Foxboro"
+      },
+      {
+        "new_route_id": "CR-Franklin",
+        "old_route_id": "CR-Franklin"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Franklin",
+        "old_route_id": "Shuttle-Generic-Franklin"
+      },
+      {
+        "new_route_id": "Shuttle-CantonJunctionForgePark",
+        "old_route_id": "Shuttle-CantonJunctionForgePark"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkNorwoodCentral",
+        "old_route_id": "Shuttle-ForgeParkNorwoodCentral"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkReadville",
+        "old_route_id": "Shuttle-ForgeParkReadville"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkSouthStation",
+        "old_route_id": "Shuttle-ForgeParkSouthStation"
+      },
+      {
+        "new_route_id": "Shuttle-ForgeParkWalpole",
+        "old_route_id": "Shuttle-ForgeParkWalpole"
+      },
+      {
+        "new_route_id": "Green-B",
+        "old_route_id": "Green-B"
+      },
+      {
+        "new_route_id": "Green-C",
+        "old_route_id": "Green-C"
+      },
+      {
+        "new_route_id": "Green-D",
+        "old_route_id": "Green-D"
+      },
+      {
+        "new_route_id": "Green-E",
+        "old_route_id": "Green-E"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegePackardsCorner",
+        "old_route_id": "Shuttle-BostonCollegePackardsCorner"
+      },
+      {
+        "new_route_id": "Shuttle-ClevelandCircleStMarys",
+        "old_route_id": "Shuttle-ClevelandCircleStMarys"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsStMarysKenmore",
+        "old_route_id": "Shuttle-NewtonHighlandsStMarysKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreStMarysRiverside",
+        "old_route_id": "Shuttle-KenmoreStMarysRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayStMarys",
+        "old_route_id": "Shuttle-BackBayStMarys"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreStMarysNotFenway",
+        "old_route_id": "Shuttle-KenmoreStMarysNotFenway"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-B",
+        "old_route_id": "Shuttle-Generic-Green-B"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-C",
+        "old_route_id": "Shuttle-Generic-Green-C"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-D",
+        "old_route_id": "Shuttle-Generic-Green-D"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-E",
+        "old_route_id": "Shuttle-Generic-Green-E"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green",
+        "old_route_id": "Shuttle-Generic-Green"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Green-Trunk",
+        "old_route_id": "Shuttle-Generic-Green-Trunk"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockStreetBackBayViaCopley",
+        "old_route_id": "Shuttle-BabcockStreetBackBayViaCopley"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockBackBay",
+        "old_route_id": "Shuttle-BabcockBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockBlandford",
+        "old_route_id": "Shuttle-BabcockBlandford"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockCopley",
+        "old_route_id": "Shuttle-BabcockCopley"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockKenmore",
+        "old_route_id": "Shuttle-BabcockKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-BabcockBostonCollege",
+        "old_route_id": "Shuttle-BabcockBostonCollege"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegeBackBay",
+        "old_route_id": "Shuttle-BostonCollegeBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-BlandfordBostonCollege",
+        "old_route_id": "Shuttle-BlandfordBostonCollege"
+      },
+      {
+        "new_route_id": "Shuttle-BostonCollegeWashington",
+        "old_route_id": "Shuttle-BostonCollegeWashington"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayBostonUniversityEast",
+        "old_route_id": "Shuttle-BackBayBostonUniversityEast"
+      },
+      {
+        "new_route_id": "Shuttle-BostonUniversityEastPark",
+        "old_route_id": "Shuttle-BostonUniversityEastPark"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsBackBay",
+        "old_route_id": "Shuttle-BrooklineHillsBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsKenmore",
+        "old_route_id": "Shuttle-BrooklineHillsKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-ClevelandCircleCoolidgeCorner",
+        "old_route_id": "Shuttle-ClevelandCircleCoolidgeCorner"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayKenmore",
+        "old_route_id": "Shuttle-FenwayKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterMedfordTufts",
+        "old_route_id": "Shuttle-GovernmentCenterMedfordTufts"
+      },
+      {
+        "new_route_id": "Shuttle-HeathPark",
+        "old_route_id": "Shuttle-HeathPark"
+      },
+      {
+        "new_route_id": "Shuttle-HeathPrudential",
+        "old_route_id": "Shuttle-HeathPrudential"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreBackBayViaCopley",
+        "old_route_id": "Shuttle-KenmoreBackBayViaCopley"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayKenmore",
+        "old_route_id": "Shuttle-BackBayKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyKenmore",
+        "old_route_id": "Shuttle-CopleyKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-LechmereNorthStation",
+        "old_route_id": "Shuttle-LechmereNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-EastSomervilleMedford",
+        "old_route_id": "Shuttle-EastSomervilleMedford"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterMedfordViaUnionSq",
+        "old_route_id": "Shuttle-GovernmentCenterMedfordViaUnionSq"
+      },
+      {
+        "new_route_id": "Shuttle-MedfordNorthStation",
+        "old_route_id": "Shuttle-MedfordNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsNewtonHighlands",
+        "old_route_id": "Shuttle-BrooklineHillsNewtonHighlands"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayNewtonHighlands",
+        "old_route_id": "Shuttle-FenwayNewtonHighlands"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsKenmore",
+        "old_route_id": "Shuttle-NewtonHighlandsKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsReservoir",
+        "old_route_id": "Shuttle-NewtonHighlandsReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterNorthStation",
+        "old_route_id": "Shuttle-GovernmentCenterNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationMedfordTufts",
+        "old_route_id": "Shuttle-NorthStationMedfordTufts"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationSullivanSquare",
+        "old_route_id": "Shuttle-NorthStationSullivanSquare"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsReservoir",
+        "old_route_id": "Shuttle-BrooklineHillsReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayReservoir",
+        "old_route_id": "Shuttle-FenwayReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreReservoir",
+        "old_route_id": "Shuttle-KenmoreReservoir"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineHillsRiverside",
+        "old_route_id": "Shuttle-BrooklineHillsRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-BrooklineVillageRiverside",
+        "old_route_id": "Shuttle-BrooklineVillageRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyRiversideExpress",
+        "old_route_id": "Shuttle-CopleyRiversideExpress"
+      },
+      {
+        "new_route_id": "Shuttle-RiversideCopley",
+        "old_route_id": "Shuttle-RiversideCopley"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyRiversideLimited",
+        "old_route_id": "Shuttle-CopleyRiversideLimited"
+      },
+      {
+        "new_route_id": "Shuttle-FenwayRiverside",
+        "old_route_id": "Shuttle-FenwayRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-RiversideKenmore",
+        "old_route_id": "Shuttle-RiversideKenmore"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreRiverside",
+        "old_route_id": "Shuttle-KenmoreRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-NewtonHighlandsRiverside",
+        "old_route_id": "Shuttle-NewtonHighlandsRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-ReservoirRiverside",
+        "old_route_id": "Shuttle-ReservoirRiverside"
+      },
+      {
+        "new_route_id": "Shuttle-GovernmentCenterUnionSquare",
+        "old_route_id": "Shuttle-GovernmentCenterUnionSquare"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationUnionSquare",
+        "old_route_id": "Shuttle-NorthStationUnionSquare"
+      },
+      {
+        "new_route_id": "Shuttle-BlandfordWashington",
+        "old_route_id": "Shuttle-BlandfordWashington"
+      },
+      {
+        "new_route_id": "Shuttle-KenmoreWashington",
+        "old_route_id": "Shuttle-KenmoreWashington"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyWoodlandLimited",
+        "old_route_id": "Shuttle-CopleyWoodlandLimited"
+      },
+      {
+        "new_route_id": "CR-Greenbush",
+        "old_route_id": "CR-Greenbush"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Greenbush",
+        "old_route_id": "Shuttle-Generic-Greenbush"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeSouthStationExpress",
+        "old_route_id": "Shuttle-BraintreeSouthStationExpress"
+      },
+      {
+        "new_route_id": "Shuttle-GreenbushNorthScituate",
+        "old_route_id": "Shuttle-GreenbushNorthScituate"
+      },
+      {
+        "new_route_id": "CR-Haverhill",
+        "old_route_id": "CR-Haverhill"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Haverhill",
+        "old_route_id": "Shuttle-Generic-Haverhill"
+      },
+      {
+        "new_route_id": "Shuttle-BallardvaleMaldenCenter",
+        "old_route_id": "Shuttle-BallardvaleMaldenCenter"
+      },
+      {
+        "new_route_id": "Shuttle-BallardvaleNorthStation",
+        "old_route_id": "Shuttle-BallardvaleNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-AndoverHaverhill",
+        "old_route_id": "Shuttle-AndoverHaverhill"
+      },
+      {
+        "new_route_id": "Shuttle-BradfordHaverhill",
+        "old_route_id": "Shuttle-BradfordHaverhill"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillMaldenCenter",
+        "old_route_id": "Shuttle-HaverhillMaldenCenter"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillNorthStation",
+        "old_route_id": "Shuttle-HaverhillNorthStation"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillReadingExpress",
+        "old_route_id": "Shuttle-HaverhillReadingExpress"
+      },
+      {
+        "new_route_id": "Shuttle-HaverhillReadingLocal",
+        "old_route_id": "Shuttle-HaverhillReadingLocal"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnReading",
+        "old_route_id": "Shuttle-AndersonWoburnReading"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveReading",
+        "old_route_id": "Shuttle-OakGroveReading"
+      },
+      {
+        "new_route_id": "CR-Kingston",
+        "old_route_id": "CR-Kingston"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Kingston",
+        "old_route_id": "Shuttle-Generic-Kingston"
+      },
+      {
+        "new_route_id": "Shuttle-HalifaxKingston",
+        "old_route_id": "Shuttle-HalifaxKingston"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeSouthWeymouth",
+        "old_route_id": "Shuttle-BraintreeSouthWeymouth"
+      },
+      {
+        "new_route_id": "Shuttle-SouthStationSouthWeymouth",
+        "old_route_id": "Shuttle-SouthStationSouthWeymouth"
+      },
+      {
+        "new_route_id": "CR-Lowell",
+        "old_route_id": "CR-Lowell"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Lowell",
+        "old_route_id": "Shuttle-Generic-Lowell"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnNorthStationExpress",
+        "old_route_id": "Shuttle-AndersonWoburnNorthStationExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnNorthStationLocal",
+        "old_route_id": "Shuttle-AndersonWoburnNorthStationLocal"
+      },
+      {
+        "new_route_id": "Shuttle-AndersonWoburnLowell",
+        "old_route_id": "Shuttle-AndersonWoburnLowell"
+      },
+      {
+        "new_route_id": "Shuttle-NorthBillericaLowell",
+        "old_route_id": "Shuttle-NorthBillericaLowell"
+      },
+      {
+        "new_route_id": "Shuttle-LowellWilmington",
+        "old_route_id": "Shuttle-LowellWilmington"
+      },
+      {
+        "new_route_id": "Mattapan",
+        "old_route_id": "Mattapan"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Mattapan",
+        "old_route_id": "Shuttle-Generic-Mattapan"
+      },
+      {
+        "new_route_id": "Shuttle-MattapanAshmont",
+        "old_route_id": "Shuttle-MattapanAshmont"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontMattapan",
+        "old_route_id": "Shuttle-AshmontMattapan"
+      },
+      {
+        "new_route_id": "CR-Needham",
+        "old_route_id": "CR-Needham"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Needham",
+        "old_route_id": "Shuttle-Generic-Needham"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsNeedhamHeights",
+        "old_route_id": "Shuttle-ForestHillsNeedhamHeights"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsNewtonHighlands",
+        "old_route_id": "Shuttle-ForestHillsNewtonHighlands"
+      },
+      {
+        "new_route_id": "CR-NewBedford",
+        "old_route_id": "CR-NewBedford"
+      },
+      {
+        "new_route_id": "CR-Newburyport",
+        "old_route_id": "CR-Newburyport"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Newburyport",
+        "old_route_id": "Shuttle-Generic-Newburyport"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyNorthStationLimited",
+        "old_route_id": "Shuttle-BeverlyNorthStationLimited"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyRockportExpress",
+        "old_route_id": "Shuttle-BeverlyRockportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyRockportLocal",
+        "old_route_id": "Shuttle-BeverlyRockportLocal"
+      },
+      {
+        "new_route_id": "Shuttle-ChelseaLynn",
+        "old_route_id": "Shuttle-ChelseaLynn"
+      },
+      {
+        "new_route_id": "Shuttle-LynnNorthStationExpress",
+        "old_route_id": "Shuttle-LynnNorthStationExpress"
+      },
+      {
+        "new_route_id": "Shuttle-LynnSwampscott",
+        "old_route_id": "Shuttle-LynnSwampscott"
+      },
+      {
+        "new_route_id": "Shuttle-ManchesterGloucester",
+        "old_route_id": "Shuttle-ManchesterGloucester"
+      },
+      {
+        "new_route_id": "Shuttle-ManchesterRockport",
+        "old_route_id": "Shuttle-ManchesterRockport"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyNewburyportExpress",
+        "old_route_id": "Shuttle-BeverlyNewburyportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-BeverlyNewburyportLocal",
+        "old_route_id": "Shuttle-BeverlyNewburyportLocal"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportOakGroveExpress",
+        "old_route_id": "Shuttle-NewburyportOakGroveExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportOakGroveLimited",
+        "old_route_id": "Shuttle-NewburyportOakGroveLimited"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportSalemExpress",
+        "old_route_id": "Shuttle-NewburyportSalemExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NewburyportSalemLocal",
+        "old_route_id": "Shuttle-NewburyportSalemLocal"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveRockportExpress",
+        "old_route_id": "Shuttle-OakGroveRockportExpress"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveRockportLimited",
+        "old_route_id": "Shuttle-OakGroveRockportLimited"
+      },
+      {
+        "new_route_id": "Shuttle-RockportSalemExpress",
+        "old_route_id": "Shuttle-RockportSalemExpress"
+      },
+      {
+        "new_route_id": "Shuttle-RockportSalemLocal",
+        "old_route_id": "Shuttle-RockportSalemLocal"
+      },
+      {
+        "new_route_id": "Shuttle-RockportWestGloucester",
+        "old_route_id": "Shuttle-RockportWestGloucester"
+      },
+      {
+        "new_route_id": "Shuttle-OakGroveSalemLocal",
+        "old_route_id": "Shuttle-OakGroveSalemLocal"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationSwampscottLimited",
+        "old_route_id": "Shuttle-NorthStationSwampscottLimited"
+      },
+      {
+        "new_route_id": "Orange",
+        "old_route_id": "Orange"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Orange",
+        "old_route_id": "Shuttle-Generic-Orange"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsBackBay",
+        "old_route_id": "Shuttle-ForestHillsBackBay"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsBackBayViaCopley",
+        "old_route_id": "Shuttle-ForestHillsBackBayViaCopley"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsBackBayViaRugglesBusway",
+        "old_route_id": "Shuttle-ForestHillsBackBayViaRugglesBusway"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyForestHills",
+        "old_route_id": "Shuttle-CopleyForestHills"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsJacksonSquare",
+        "old_route_id": "Shuttle-ForestHillsJacksonSquare"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsJackson",
+        "old_route_id": "Shuttle-ForestHillsJackson"
+      },
+      {
+        "new_route_id": "Shuttle-ForestHillsRuggles",
+        "old_route_id": "Shuttle-ForestHillsRuggles"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayJackson",
+        "old_route_id": "Shuttle-BackBayJackson"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyJacksonSquare",
+        "old_route_id": "Shuttle-CopleyJacksonSquare"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationOakGroveExpress",
+        "old_route_id": "Shuttle-NorthStationOakGroveExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationOakGroveLocal",
+        "old_route_id": "Shuttle-NorthStationOakGroveLocal"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationWellingtonExpress",
+        "old_route_id": "Shuttle-NorthStationWellingtonExpress"
+      },
+      {
+        "new_route_id": "Shuttle-NorthStationWellingtonLocal",
+        "old_route_id": "Shuttle-NorthStationWellingtonLocal"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayRuggles",
+        "old_route_id": "Shuttle-BackBayRuggles"
+      },
+      {
+        "new_route_id": "Shuttle-CopleyRuggles",
+        "old_route_id": "Shuttle-CopleyRuggles"
+      },
+      {
+        "new_route_id": "Shuttle-StateSullivan",
+        "old_route_id": "Shuttle-StateSullivan"
+      },
+      {
+        "new_route_id": "CR-Providence",
+        "old_route_id": "CR-Providence"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Providence",
+        "old_route_id": "Shuttle-Generic-Providence"
+      },
+      {
+        "new_route_id": "Shuttle-AttleboroProvidenceExpress",
+        "old_route_id": "Shuttle-AttleboroProvidenceExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AttleboroProvidenceLocal",
+        "old_route_id": "Shuttle-AttleboroProvidenceLocal"
+      },
+      {
+        "new_route_id": "Shuttle-PawtucketProvidence",
+        "old_route_id": "Shuttle-PawtucketProvidence"
+      },
+      {
+        "new_route_id": "Shuttle-CantonJunctionStoughton",
+        "old_route_id": "Shuttle-CantonJunctionStoughton"
+      },
+      {
+        "new_route_id": "Shuttle-TFGreenWickfordJunction",
+        "old_route_id": "Shuttle-TFGreenWickfordJunction"
+      },
+      {
+        "new_route_id": "Red",
+        "old_route_id": "Red"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red-Ashmont",
+        "old_route_id": "Shuttle-Generic-Red-Ashmont"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red-Braintree",
+        "old_route_id": "Shuttle-Generic-Red-Braintree"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red",
+        "old_route_id": "Shuttle-Generic-Red"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Red-Trunk",
+        "old_route_id": "Shuttle-Generic-Red-Trunk"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeDavis",
+        "old_route_id": "Shuttle-AlewifeDavis"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeHarvardViaBrattle",
+        "old_route_id": "Shuttle-AlewifeHarvardViaBrattle"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeHarvardViaHolyoke",
+        "old_route_id": "Shuttle-AlewifeHarvardViaHolyoke"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeKendallExpress",
+        "old_route_id": "Shuttle-AlewifeKendallExpress"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeKendall",
+        "old_route_id": "Shuttle-AlewifeKendall"
+      },
+      {
+        "new_route_id": "Shuttle-AlewifeParkSt",
+        "old_route_id": "Shuttle-AlewifeParkSt"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontBraintree",
+        "old_route_id": "Shuttle-AshmontBraintree"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontBroadway",
+        "old_route_id": "Shuttle-AshmontBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontJFKUMass",
+        "old_route_id": "Shuttle-AshmontJFKUMass"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontJFK",
+        "old_route_id": "Shuttle-AshmontJFK"
+      },
+      {
+        "new_route_id": "Shuttle-AshmontParkStreetViaPostOffice",
+        "old_route_id": "Shuttle-AshmontParkStreetViaPostOffice"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeBroadway",
+        "old_route_id": "Shuttle-BraintreeBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeJFKUMass",
+        "old_route_id": "Shuttle-BraintreeJFKUMass"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeNorthQuincy",
+        "old_route_id": "Shuttle-BraintreeNorthQuincy"
+      },
+      {
+        "new_route_id": "Shuttle-BraintreeQuincyCenter",
+        "old_route_id": "Shuttle-BraintreeQuincyCenter"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayHarvard",
+        "old_route_id": "Shuttle-BroadwayHarvard"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardJFK",
+        "old_route_id": "Shuttle-HarvardJFK"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardJFKOmitCongress",
+        "old_route_id": "Shuttle-HarvardJFKOmitCongress"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardKendall",
+        "old_route_id": "Shuttle-HarvardKendall"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardPark",
+        "old_route_id": "Shuttle-HarvardPark"
+      },
+      {
+        "new_route_id": "Shuttle-HarvardSouthStation",
+        "old_route_id": "Shuttle-HarvardSouthStation"
+      },
+      {
+        "new_route_id": "Shuttle-JFKUMassBroadway",
+        "old_route_id": "Shuttle-JFKUMassBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayJFK",
+        "old_route_id": "Shuttle-BroadwayJFK"
+      },
+      {
+        "new_route_id": "Shuttle-JFKUMassKendallMIT",
+        "old_route_id": "Shuttle-JFKUMassKendallMIT"
+      },
+      {
+        "new_route_id": "Shuttle-JFKParkStreetViaPostOffice",
+        "old_route_id": "Shuttle-JFKParkStreetViaPostOffice"
+      },
+      {
+        "new_route_id": "Shuttle-JFKPark",
+        "old_route_id": "Shuttle-JFKPark"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayKendall",
+        "old_route_id": "Shuttle-BroadwayKendall"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayKendallOmitDTX",
+        "old_route_id": "Shuttle-BroadwayKendallOmitDTX"
+      },
+      {
+        "new_route_id": "Shuttle-JFKKendall",
+        "old_route_id": "Shuttle-JFKKendall"
+      },
+      {
+        "new_route_id": "Shuttle-KendallPark",
+        "old_route_id": "Shuttle-KendallPark"
+      },
+      {
+        "new_route_id": "Shuttle-JFKMattapan",
+        "old_route_id": "Shuttle-JFKMattapan"
+      },
+      {
+        "new_route_id": "Shuttle-NorthQuincyBroadway",
+        "old_route_id": "Shuttle-NorthQuincyBroadway"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayNorthQuincy",
+        "old_route_id": "Shuttle-BroadwayNorthQuincy"
+      },
+      {
+        "new_route_id": "Shuttle-JFKNorthQuincy",
+        "old_route_id": "Shuttle-JFKNorthQuincy"
+      },
+      {
+        "new_route_id": "Shuttle-BroadwayQuincyCenterExpress",
+        "old_route_id": "Shuttle-BroadwayQuincyCenterExpress"
+      },
+      {
+        "new_route_id": "Shuttle-QuincyCenterBroadway",
+        "old_route_id": "Shuttle-QuincyCenterBroadway"
+      },
+      {
+        "new_route_id": "751",
+        "old_route_id": "751"
+      },
+      {
+        "new_route_id": "749",
+        "old_route_id": "749"
+      },
+      {
+        "new_route_id": "743",
+        "old_route_id": "743"
+      },
+      {
+        "new_route_id": "742",
+        "old_route_id": "742"
+      },
+      {
+        "new_route_id": "741",
+        "old_route_id": "741"
+      },
+      {
+        "new_route_id": "746",
+        "old_route_id": "746"
+      },
+      {
+        "new_route_id": "Shuttle-CastleIslandJFK",
+        "old_route_id": "Shuttle-CastleIslandJFK"
+      },
+      {
+        "new_route_id": "Shuttle-NavyYardSullivan",
+        "old_route_id": "Shuttle-NavyYardSullivan"
+      },
+      {
+        "new_route_id": "CR-Worcester",
+        "old_route_id": "CR-Worcester"
+      },
+      {
+        "new_route_id": "Shuttle-Generic-Worcester",
+        "old_route_id": "Shuttle-Generic-Worcester"
+      },
+      {
+        "new_route_id": "Shuttle-AshlandFramingham",
+        "old_route_id": "Shuttle-AshlandFramingham"
+      },
+      {
+        "new_route_id": "Shuttle-BackBayBostonLanding",
+        "old_route_id": "Shuttle-BackBayBostonLanding"
+      },
+      {
+        "new_route_id": "Shuttle-BostonLandingSouthStationExpress",
+        "old_route_id": "Shuttle-BostonLandingSouthStationExpress"
+      },
+      {
+        "new_route_id": "CapeFlyer",
+        "old_route_id": "CapeFlyer"
+      }
+    ],
+    "unmatched_new_ids": [],
+    "unmatched_old_ids": []
+  },
+  "raw_identity": {
+    "added_ids": [],
+    "persisting_ids": [
+      "1",
+      "10",
+      "100",
+      "101",
+      "104",
+      "105",
+      "106",
+      "108",
+      "109",
+      "11",
+      "110",
+      "111",
+      "112",
+      "114",
+      "116",
+      "119",
+      "120",
+      "121",
+      "131",
+      "132",
+      "134",
+      "137",
+      "14",
+      "15",
+      "16",
+      "17",
+      "171",
+      "18",
+      "19",
+      "195",
+      "201",
+      "202",
+      "21",
+      "210",
+      "211",
+      "215",
+      "216",
+      "217",
+      "22",
+      "220",
+      "222",
+      "225",
+      "226",
+      "23",
+      "230",
+      "236",
+      "238",
+      "24",
+      "240",
+      "245",
+      "26",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "34E",
+      "35",
+      "350",
+      "351",
+      "354",
+      "36",
+      "37",
+      "38",
+      "39",
+      "4",
+      "40",
+      "41",
+      "411",
+      "42",
+      "424",
+      "426",
+      "428",
+      "429",
+      "43",
+      "430",
+      "435",
+      "436",
+      "439",
+      "44",
+      "441",
+      "441442",
+      "442",
+      "45",
+      "450",
+      "451",
+      "455",
+      "456",
+      "47",
+      "50",
+      "501",
+      "504",
+      "505",
+      "51",
+      "52",
+      "55",
+      "553",
+      "554",
+      "556",
+      "558",
+      "57",
+      "59",
+      "60",
+      "61",
+      "62",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "7",
+      "70",
+      "708",
+      "71",
+      "712",
+      "713",
+      "714",
+      "716",
+      "73",
+      "74",
+      "741",
+      "742",
+      "743",
+      "746",
+      "749",
+      "75",
+      "751",
+      "76",
+      "77",
+      "78",
+      "8",
+      "80",
+      "83",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "8993",
+      "9",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "99",
+      "Blue",
+      "Boat-EastBoston",
+      "Boat-F1",
+      "Boat-F10",
+      "Boat-F2H",
+      "Boat-F4",
+      "Boat-F6",
+      "Boat-F7",
+      "Boat-F8",
+      "Boat-Lynn",
+      "CR-Fairmount",
+      "CR-Fitchburg",
+      "CR-Foxboro",
+      "CR-Franklin",
+      "CR-Greenbush",
+      "CR-Haverhill",
+      "CR-Kingston",
+      "CR-Lowell",
+      "CR-Needham",
+      "CR-NewBedford",
+      "CR-Newburyport",
+      "CR-Providence",
+      "CR-Worcester",
+      "CapeFlyer",
+      "Green-B",
+      "Green-C",
+      "Green-D",
+      "Green-E",
+      "Mattapan",
+      "Orange",
+      "Red",
+      "Shuttle-AirportGovernmentCenterExpress",
+      "Shuttle-AirportGovernmentCenterLocal",
+      "Shuttle-AirportGovernmentCenterLocalViaGate",
+      "Shuttle-AirportMaverick",
+      "Shuttle-AirportWonderland",
+      "Shuttle-AlewifeDavis",
+      "Shuttle-AlewifeHarvardViaBrattle",
+      "Shuttle-AlewifeHarvardViaHolyoke",
+      "Shuttle-AlewifeKendall",
+      "Shuttle-AlewifeKendallExpress",
+      "Shuttle-AlewifeLittletonExpress",
+      "Shuttle-AlewifeLittletonLocal",
+      "Shuttle-AlewifeParkSt",
+      "Shuttle-AndersonWoburnLowell",
+      "Shuttle-AndersonWoburnNorthStationExpress",
+      "Shuttle-AndersonWoburnNorthStationLocal",
+      "Shuttle-AndersonWoburnReading",
+      "Shuttle-AndoverHaverhill",
+      "Shuttle-AshlandFramingham",
+      "Shuttle-AshmontBraintree",
+      "Shuttle-AshmontBroadway",
+      "Shuttle-AshmontJFK",
+      "Shuttle-AshmontJFKUMass",
+      "Shuttle-AshmontMattapan",
+      "Shuttle-AshmontParkStreetViaPostOffice",
+      "Shuttle-AttleboroProvidenceExpress",
+      "Shuttle-AttleboroProvidenceLocal",
+      "Shuttle-BabcockBackBay",
+      "Shuttle-BabcockBlandford",
+      "Shuttle-BabcockBostonCollege",
+      "Shuttle-BabcockCopley",
+      "Shuttle-BabcockKenmore",
+      "Shuttle-BabcockStreetBackBayViaCopley",
+      "Shuttle-BackBayBostonLanding",
+      "Shuttle-BackBayBostonUniversityEast",
+      "Shuttle-BackBayJackson",
+      "Shuttle-BackBayKenmore",
+      "Shuttle-BackBayRuggles",
+      "Shuttle-BackBayStMarys",
+      "Shuttle-BallardvaleMaldenCenter",
+      "Shuttle-BallardvaleNorthStation",
+      "Shuttle-BeverlyNewburyportExpress",
+      "Shuttle-BeverlyNewburyportLocal",
+      "Shuttle-BeverlyNorthStationLimited",
+      "Shuttle-BeverlyRockportExpress",
+      "Shuttle-BeverlyRockportLocal",
+      "Shuttle-BlandfordBostonCollege",
+      "Shuttle-BlandfordWashington",
+      "Shuttle-BostonCollegeBackBay",
+      "Shuttle-BostonCollegeKenmore",
+      "Shuttle-BostonCollegePackardsCorner",
+      "Shuttle-BostonCollegeWashington",
+      "Shuttle-BostonLandingSouthStationExpress",
+      "Shuttle-BostonUniversityEastPark",
+      "Shuttle-BradfordHaverhill",
+      "Shuttle-BraintreeBroadway",
+      "Shuttle-BraintreeJFKUMass",
+      "Shuttle-BraintreeNorthQuincy",
+      "Shuttle-BraintreeQuincyCenter",
+      "Shuttle-BraintreeSouthStationExpress",
+      "Shuttle-BraintreeSouthWeymouth",
+      "Shuttle-BroadwayHarvard",
+      "Shuttle-BroadwayJFK",
+      "Shuttle-BroadwayKendall",
+      "Shuttle-BroadwayKendallOmitDTX",
+      "Shuttle-BroadwayNorthQuincy",
+      "Shuttle-BroadwayQuincyCenterExpress",
+      "Shuttle-BrooklineHillsBackBay",
+      "Shuttle-BrooklineHillsKenmore",
+      "Shuttle-BrooklineHillsNewtonHighlands",
+      "Shuttle-BrooklineHillsReservoir",
+      "Shuttle-BrooklineHillsRiverside",
+      "Shuttle-BrooklineVillageRiverside",
+      "Shuttle-CantonJunctionForgePark",
+      "Shuttle-CantonJunctionStoughton",
+      "Shuttle-CastleIslandJFK",
+      "Shuttle-ChelseaLynn",
+      "Shuttle-ClevelandCircleCoolidgeCorner",
+      "Shuttle-ClevelandCircleKenmore",
+      "Shuttle-ClevelandCircleStMarys",
+      "Shuttle-CopleyForestHills",
+      "Shuttle-CopleyJacksonSquare",
+      "Shuttle-CopleyKenmore",
+      "Shuttle-CopleyRiversideExpress",
+      "Shuttle-CopleyRiversideLimited",
+      "Shuttle-CopleyRuggles",
+      "Shuttle-CopleyWoodlandLimited",
+      "Shuttle-EastSomervilleMedford",
+      "Shuttle-FenwayKenmore",
+      "Shuttle-FenwayNewtonHighlands",
+      "Shuttle-FenwayReservoir",
+      "Shuttle-FenwayRiverside",
+      "Shuttle-ForestHillsBackBay",
+      "Shuttle-ForestHillsBackBayViaCopley",
+      "Shuttle-ForestHillsBackBayViaRugglesBusway",
+      "Shuttle-ForestHillsJackson",
+      "Shuttle-ForestHillsJacksonSquare",
+      "Shuttle-ForestHillsNeedhamHeights",
+      "Shuttle-ForestHillsNewtonHighlands",
+      "Shuttle-ForestHillsRuggles",
+      "Shuttle-ForgeParkNorwoodCentral",
+      "Shuttle-ForgeParkReadville",
+      "Shuttle-ForgeParkSouthStation",
+      "Shuttle-ForgeParkWalpole",
+      "Shuttle-Generic",
+      "Shuttle-Generic-Blue",
+      "Shuttle-Generic-CommuterRail",
+      "Shuttle-Generic-CommuterRail-North",
+      "Shuttle-Generic-CommuterRail-South",
+      "Shuttle-Generic-Elevator",
+      "Shuttle-Generic-Fairmount",
+      "Shuttle-Generic-Fitchburg",
+      "Shuttle-Generic-Franklin",
+      "Shuttle-Generic-Green",
+      "Shuttle-Generic-Green-B",
+      "Shuttle-Generic-Green-C",
+      "Shuttle-Generic-Green-D",
+      "Shuttle-Generic-Green-E",
+      "Shuttle-Generic-Green-Trunk",
+      "Shuttle-Generic-Greenbush",
+      "Shuttle-Generic-Haverhill",
+      "Shuttle-Generic-Kingston",
+      "Shuttle-Generic-Lowell",
+      "Shuttle-Generic-Mattapan",
+      "Shuttle-Generic-Needham",
+      "Shuttle-Generic-Newburyport",
+      "Shuttle-Generic-Orange",
+      "Shuttle-Generic-Providence",
+      "Shuttle-Generic-Red",
+      "Shuttle-Generic-Red-Ashmont",
+      "Shuttle-Generic-Red-Braintree",
+      "Shuttle-Generic-Red-Trunk",
+      "Shuttle-Generic-Worcester",
+      "Shuttle-GovernmentCenterMedfordTufts",
+      "Shuttle-GovernmentCenterMedfordViaUnionSq",
+      "Shuttle-GovernmentCenterNorthStation",
+      "Shuttle-GovernmentCenterUnionSquare",
+      "Shuttle-GovernmentCenterWonderland",
+      "Shuttle-GreenbushNorthScituate",
+      "Shuttle-HalifaxKingston",
+      "Shuttle-HarvardJFK",
+      "Shuttle-HarvardJFKOmitCongress",
+      "Shuttle-HarvardKendall",
+      "Shuttle-HarvardPark",
+      "Shuttle-HarvardSouthStation",
+      "Shuttle-HaverhillMaldenCenter",
+      "Shuttle-HaverhillNorthStation",
+      "Shuttle-HaverhillReadingExpress",
+      "Shuttle-HaverhillReadingLocal",
+      "Shuttle-HaymarketAirport",
+      "Shuttle-HaymarketAirportExpress",
+      "Shuttle-HaymarketAirportLocal",
+      "Shuttle-HeathPark",
+      "Shuttle-HeathPrudential",
+      "Shuttle-JFKKendall",
+      "Shuttle-JFKMattapan",
+      "Shuttle-JFKNorthQuincy",
+      "Shuttle-JFKPark",
+      "Shuttle-JFKParkStreetViaPostOffice",
+      "Shuttle-JFKUMassBroadway",
+      "Shuttle-JFKUMassKendallMIT",
+      "Shuttle-KendallPark",
+      "Shuttle-KenmoreBackBayViaCopley",
+      "Shuttle-KenmoreReservoir",
+      "Shuttle-KenmoreRiverside",
+      "Shuttle-KenmoreStMarysNotFenway",
+      "Shuttle-KenmoreStMarysRiverside",
+      "Shuttle-KenmoreWashington",
+      "Shuttle-LechmereNorthStation",
+      "Shuttle-LittletonWachusett",
+      "Shuttle-LowellWilmington",
+      "Shuttle-LynnNorthStationExpress",
+      "Shuttle-LynnSwampscott",
+      "Shuttle-ManchesterGloucester",
+      "Shuttle-ManchesterRockport",
+      "Shuttle-MattapanAshmont",
+      "Shuttle-MaverickWonderland",
+      "Shuttle-MedfordNorthStation",
+      "Shuttle-NavyYardSullivan",
+      "Shuttle-NewburyportOakGroveExpress",
+      "Shuttle-NewburyportOakGroveLimited",
+      "Shuttle-NewburyportSalemExpress",
+      "Shuttle-NewburyportSalemLocal",
+      "Shuttle-NewtonHighlandsKenmore",
+      "Shuttle-NewtonHighlandsReservoir",
+      "Shuttle-NewtonHighlandsRiverside",
+      "Shuttle-NewtonHighlandsStMarysKenmore",
+      "Shuttle-NorthBillericaLowell",
+      "Shuttle-NorthLeominsterWachusett",
+      "Shuttle-NorthQuincyBroadway",
+      "Shuttle-NorthStationMedfordTufts",
+      "Shuttle-NorthStationOakGroveExpress",
+      "Shuttle-NorthStationOakGroveLocal",
+      "Shuttle-NorthStationSullivanSquare",
+      "Shuttle-NorthStationSwampscottLimited",
+      "Shuttle-NorthStationUnionSquare",
+      "Shuttle-NorthStationWellingtonExpress",
+      "Shuttle-NorthStationWellingtonLocal",
+      "Shuttle-OakGroveReading",
+      "Shuttle-OakGroveRockportExpress",
+      "Shuttle-OakGroveRockportLimited",
+      "Shuttle-OakGroveSalemLocal",
+      "Shuttle-OrientHeightsGovernmentCenterExpress",
+      "Shuttle-OrientHeightsGovernmentCenterLocal",
+      "Shuttle-OrientHeightsWonderland",
+      "Shuttle-PawtucketProvidence",
+      "Shuttle-QuincyCenterBroadway",
+      "Shuttle-ReadvilleSouthStation",
+      "Shuttle-ReservoirRiverside",
+      "Shuttle-RiversideCopley",
+      "Shuttle-RiversideKenmore",
+      "Shuttle-RockportSalemExpress",
+      "Shuttle-RockportSalemLocal",
+      "Shuttle-RockportWestGloucester",
+      "Shuttle-ShirleyWachusett",
+      "Shuttle-SouthStationSouthWeymouth",
+      "Shuttle-StateSullivan",
+      "Shuttle-SuffolkDownsWonderland",
+      "Shuttle-TFGreenWickfordJunction",
+      "Shuttle-WonderlandAirport"
+    ],
+    "removed_ids": []
+  },
+  "schema_version": 1
+}

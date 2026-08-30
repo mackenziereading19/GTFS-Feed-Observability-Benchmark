@@ -1,0 +1,70 @@
+{
+  "baseline": {
+    "filename": "20260623.zip",
+    "sha256": "01b46311b0ea81753bc83c1ca48b736744772378c9ee960d890e1b8e4a9f4c1d"
+  },
+  "candidate": {
+    "filename": "20260624.zip",
+    "sha256": "faa39af8ef9239003cd3d74b647c821084029efc0fd48aa009f308406b5e8428"
+  },
+  "comparison_schema_version": 1,
+  "entities": {},
+  "feed_info": {
+    "feed_end_date": {
+      "after": "20260629",
+      "before": "20260623"
+    },
+    "feed_start_date": {
+      "after": "20260624",
+      "before": "20260623"
+    },
+    "feed_version": {
+      "after": "Summer 2026, 2026-07-01T18:03:11+00:00, version D",
+      "before": "Summer 2026, 2026-06-30T21:43:27+00:00, version D"
+    }
+  },
+  "identities": {
+    "service_ids_in_trips": {
+      "added": [
+        "LRV20263-hlb36fr1-Weekday-01",
+        "LRV20263-hlb36fr1-Weekday-01-S037dae5e",
+        "LRV20263-hlb36fr1-Weekday-01-Sf7c012df",
+        "LRV20263-hlm36fr1-Weekday-01-Scd2b633c",
+        "RTL20263-hmb36fr1-Weekday-01",
+        "RTL20263-hmo36fr1-Weekday-01",
+        "RTL20263-hms36fr1-Weekday-01"
+      ],
+      "removed": [
+        "LRV20263-alb36011-Weekday-01",
+        "LRV20263-alb36011-Weekday-01-S037dae5e",
+        "LRV20263-alb36011-Weekday-01-Sf7c012df",
+        "LRV20263-hlm36011-Weekday-01-Scd2b633c",
+        "RTL20263-hmb36011-Weekday-01",
+        "RTL20263-hmo36011-Weekday-01",
+        "RTL20263-hms36011-Weekday-01"
+      ]
+    }
+  },
+  "source_changed": true,
+  "tables": {
+    "added": [],
+    "removed": [],
+    "row_changes": {
+      "calendar_dates.txt": {
+        "after": 153,
+        "before": 152,
+        "delta": 1
+      }
+    }
+  },
+  "temporal_bounds": {
+    "calendar.start_date.minimum": {
+      "after": "20260624",
+      "before": "20260623"
+    },
+    "calendar_dates.date.minimum": {
+      "after": "20260624",
+      "before": "20260623"
+    }
+  }
+}

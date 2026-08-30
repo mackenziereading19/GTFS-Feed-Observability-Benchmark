@@ -141,3 +141,24 @@ continuity rule.
 The first real evaluation found that both unmatched Santa Monica routes were
 exception-only services whose effective service periods were much shorter than
 their nominal `calendar.txt` bounds.
+
+## Second-publisher evaluation — MBTA
+
+The observability chain was evaluated unchanged against two adjacent official
+MBTA historical GTFS archive versions.
+
+Unlike the first Santa Monica evaluation, MBTA showed complete route identity
+and semantic continuity:
+
+- 403/403 route IDs persisted;
+- no route IDs were added or removed;
+- no stop IDs were added or removed;
+- all 403 routes matched exactly across versions.
+
+At the same time, seven trip-referenced service IDs were added and seven were
+removed even though the only aggregate table row-count change was a single
+additional `calendar_dates.txt` row.
+
+This demonstrates that different GTFS publishers can expose materially
+different longitudinal patterns through the same descriptive observability
+model.

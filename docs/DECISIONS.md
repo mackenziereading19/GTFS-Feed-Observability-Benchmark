@@ -220,3 +220,47 @@ withdrawal without external evidence.
 
 Do not generalise candidate ranking into fuzzy automated matching at this
 stage.
+
+## D-010 — 2026-08-30 — Second publisher demonstrates a different observability pattern
+
+**Decision:** Retain the MBTA two-version evaluation as independent evidence
+that the current observability chain generalises beyond the Santa Monica case.
+
+**Inputs:**
+
+- official MBTA historical GTFS archive;
+- `20260623.zip`;
+- `20260624.zip`;
+- adjacent archive entries;
+- no source-code changes were made for MBTA.
+
+**Observed transition:**
+
+- source ZIP changed;
+- no GTFS tables were added or removed;
+- the only table row-count change was `calendar_dates.txt`, increasing by one
+  row;
+- all 403 route IDs persisted;
+- no stop IDs were added or removed;
+- seven service IDs referenced by trips were added;
+- seven service IDs referenced by trips were removed;
+- all 403 routes have exact semantic continuity;
+- no route continuity ambiguity occurred.
+
+**Interpretation:**
+
+This is materially different from the first Santa Monica evaluation.
+
+Santa Monica exposed near-total route-ID regeneration around largely stable
+route semantics. MBTA exposes stable route and stop identities while the
+service-calendar identity layer changes beneath an almost unchanged aggregate
+table structure.
+
+The same unmodified tooling exposed both patterns.
+
+This provides stronger evidence that the project is measuring genuine
+longitudinal GTFS structure rather than encoding publisher-specific behaviour.
+
+The next gate is forensic analysis of the seven removed and seven added MBTA
+service IDs. Do not yet infer that service itself was added or removed:
+`service_id` is publisher-controlled and may also be regenerated.
