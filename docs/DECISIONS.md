@@ -328,3 +328,23 @@ as proof that one service formally replaced another without further evidence.
 
 Do not introduce fuzzy service matching or automated replacement inference at
 this stage.
+
+## D-012 — 2026-08-30 — Feasibility GO; exploratory feature development ends
+
+**Decision:** The GTFS Feed Observability Benchmark passes feasibility.
+
+Evidence from Santa Monica / Big Blue Bus and MBTA demonstrates that the same
+tooling can distinguish aggregate change, identifier churn, semantic
+continuity, effective service dates and substantive service-calendar change
+across different publisher behaviours.
+
+The project therefore proceeds to a reusable-tool phase.
+
+Exploratory feature development stops at commit
+`887adf87f656f5254dd3124a49d491f851e27b1e`.
+
+The next work must prioritise consolidation, testing, documentation, interface
+design and packaging rather than adding further semantic heuristics.
+
+Health scoring, fuzzy authoritative matching and service-withdrawal inference
+remain explicitly out of scope.
