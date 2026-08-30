@@ -1,0 +1,67 @@
+# GTFS Feed Observability Benchmark
+
+A reproducible, feed-version-oriented toolkit for observing how GTFS Schedule
+datasets change over time.
+
+## Problem
+
+GTFS validation answers whether a particular feed contains specification,
+best-practice or data-quality problems at a point in time.
+
+Operational feed monitoring asks a different set of questions:
+
+- Has the feed changed since the previous publication?
+- Has its service horizon shortened?
+- Have routes, trips, stops or service definitions disappeared?
+- Is the publisher repeatedly issuing materially identical feeds?
+- Has structural churn occurred between versions?
+- Are changes routine publication behaviour or potentially significant?
+
+Existing tools provide useful validation, pairwise diffing and GTFS querying,
+but this project investigates whether a small reproducible observability layer
+can preserve longitudinal feed evidence without introducing new validation
+rules.
+
+## Feasibility-first boundary
+
+This project does not assume that a complete observability product is needed.
+
+Development proceeds in bounded stages:
+
+1. deterministic snapshot manifest;
+2. deterministic comparison between two manifests;
+3. service-horizon metrics;
+4. structural-change metrics;
+5. repeated-version evidence;
+6. evaluation against real feed histories;
+7. only then decide whether a reusable tool is justified.
+
+A negative result is acceptable.
+
+## V0
+
+V0 takes a local GTFS ZIP and emits a deterministic JSON manifest containing:
+
+- source filename;
+- ZIP SHA-256;
+- archive byte size;
+- GTFS table inventory;
+- row counts;
+- selected entity counts;
+- `feed_info.txt` metadata when present;
+- raw `calendar.txt` date bounds;
+- raw `calendar_dates.txt` exception-date bounds;
+- service-ID counts.
+
+It intentionally does **not** calculate a health score or infer problems.
+
+## Requirements
+
+Python 3.11+ recommended.
+
+V0 uses only the Python standard library.
+
+## Usage
+
+```bash
+python3 src/gtfs_observe.py FEED.zip > manifest.json
