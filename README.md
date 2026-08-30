@@ -162,3 +162,18 @@ additional `calendar_dates.txt` row.
 This demonstrates that different GTFS publishers can expose materially
 different longitudinal patterns through the same descriptive observability
 model.
+
+## Service-calendar continuity
+
+Service-ID comparison can distinguish pure identifier regeneration from
+changes in effective service semantics.
+
+In the MBTA evaluation, seven removed and seven added service IDs had no exact
+semantic or effective-date matches.
+
+The changed IDs nevertheless formed seven natural route-group relationships.
+Across every case, the removed service represented Monday–Thursday operation
+while the added service represented Friday-only operation.
+
+This shows that a nearly unchanged aggregate GTFS snapshot can conceal
+substantive restructuring at the service-calendar layer.

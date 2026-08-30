@@ -264,3 +264,67 @@ longitudinal GTFS structure rather than encoding publisher-specific behaviour.
 The next gate is forensic analysis of the seven removed and seven added MBTA
 service IDs. Do not yet infer that service itself was added or removed:
 `service_id` is publisher-controlled and may also be regenerated.
+
+## D-011 — 2026-08-30 — MBTA service-ID churn represents changed calendar semantics
+
+**Decision:** Retain service-ID semantic analysis as evidence that identity
+changes can represent substantive service-calendar restructuring rather than
+identifier regeneration.
+
+**Observed transition:**
+
+Seven service IDs referenced by trips disappear and seven new service IDs
+appear between the adjacent MBTA archive versions.
+
+No removed service has:
+
+- an exact semantic match among the added services; or
+- an identical effective-date set among the added services.
+
+However, each changed service has a natural added counterpart with the same
+route association:
+
+- Green D/E;
+- Green B;
+- Green C;
+- Mattapan;
+- Blue;
+- Orange;
+- Red.
+
+Across all seven cases the pattern is systematic.
+
+Removed services:
+
+- Monday through Thursday weekday mask;
+- 40 effective service dates;
+- effective span 2026-06-24 through 2026-09-03.
+
+Added services:
+
+- Friday-only weekday mask;
+- 12 effective service dates;
+- effective span 2026-06-26 through 2026-09-04.
+
+Trip counts also differ between each corresponding route group.
+
+**Interpretation:**
+
+This is not equivalent service represented under regenerated IDs. The service
+calendar semantics themselves differ.
+
+The MBTA evaluation therefore demonstrates a second important longitudinal
+case:
+
+1. aggregate feed structure is nearly unchanged;
+2. route and stop identities remain stable;
+3. service IDs churn;
+4. semantic inspection shows that the churn corresponds to materially
+   different effective service calendars.
+
+The natural route-group correspondence is descriptive evidence of a
+relationship between the changed service definitions. It must not be treated
+as proof that one service formally replaced another without further evidence.
+
+Do not introduce fuzzy service matching or automated replacement inference at
+this stage.
