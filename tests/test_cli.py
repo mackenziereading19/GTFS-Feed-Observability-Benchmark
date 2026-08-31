@@ -1,10 +1,47 @@
 import subprocess
 import sys
+import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def write_zip(path, files):
+    with zipfile.ZipFile(
+        path,
+        "w",
+        compression=zipfile.ZIP_DEFLATED,
+    ) as zf:
+        for name, content in sorted(files.items()):
+            zf.writestr(name, content)
+
+
+def fixture_files(service_id):
+    return {
+        "routes.txt": (
+            "route_id,agency_id,route_short_name,"
+            "route_long_name,route_type\n"
+            "R1,A,10,Town - Station,3\n"
+        ),
+        "trips.txt": (
+            "route_id,service_id,trip_id\n"
+            f"R1,{service_id},T1\n"
+            f"R1,{service_id},T2\n"
+        ),
+        "calendar.txt": (
+            "service_id,monday,tuesday,wednesday,"
+            "thursday,friday,saturday,sunday,"
+            "start_date,end_date\n"
+            f"{service_id},1,1,1,1,1,0,0,"
+            "20260824,20260828\n"
+        ),
+        "calendar_dates.txt": (
+            "service_id,date,exception_type\n"
+        ),
+    }
 
 
 class CliTest(unittest.TestCase):
@@ -118,92 +155,96 @@ class CliTest(unittest.TestCase):
                 )
 
     def test_observe_output_matches_existing_script(self):
-        feed = (
-            ROOT
-            / "tmp"
-            / "mbta-evaluation"
-            / "20260623.zip"
-        )
+        with tempfile.TemporaryDirectory() as tmp:
+            feed = Path(tmp) / "feed.zip"
+            write_zip(
+                feed,
+                fixture_files("SVC"),
+            )
 
-        self.assertTrue(feed.is_file())
+            direct = self.run_command(
+                sys.executable,
+                "src/gtfs_observe.py",
+                str(feed),
+            )
 
-        direct = self.run_command(
-            sys.executable,
-            "src/gtfs_observe.py",
-            str(feed),
-        )
+            unified = self.run_command(
+                sys.executable,
+                "-m",
+                "src.cli",
+                "observe",
+                str(feed),
+            )
 
-        unified = self.run_command(
-            sys.executable,
-            "-m",
-            "src.cli",
-            "observe",
-            str(feed),
-        )
-
-        self.assertEqual(direct.returncode, 0)
-        self.assertEqual(unified.returncode, 0)
-        self.assertEqual(direct.stdout, unified.stdout)
-        self.assertEqual(direct.stderr, unified.stderr)
+            self.assertEqual(direct.returncode, 0)
+            self.assertEqual(unified.returncode, 0)
+            self.assertEqual(
+                direct.stdout,
+                unified.stdout,
+            )
+            self.assertEqual(
+                direct.stderr,
+                unified.stderr,
+            )
 
     def test_pairwise_outputs_match_existing_scripts(self):
-        old_feed = (
-            ROOT
-            / "tmp"
-            / "mbta-evaluation"
-            / "20260623.zip"
-        )
+        with tempfile.TemporaryDirectory() as tmp:
+            old_feed = Path(tmp) / "old.zip"
+            new_feed = Path(tmp) / "new.zip"
 
-        new_feed = (
-            ROOT
-            / "tmp"
-            / "mbta-evaluation"
-            / "20260624.zip"
-        )
+            write_zip(
+                old_feed,
+                fixture_files("OLD"),
+            )
 
-        pairs = (
-            (
-                "route-continuity",
-                "src/route_continuity.py",
-            ),
-            (
-                "service-continuity",
-                "src/service_continuity.py",
-            ),
-        )
+            write_zip(
+                new_feed,
+                fixture_files("NEW"),
+            )
 
-        for command, script in pairs:
-            with self.subTest(command=command):
-                direct = self.run_command(
-                    sys.executable,
-                    script,
-                    str(old_feed),
-                    str(new_feed),
-                )
+            pairs = (
+                (
+                    "route-continuity",
+                    "src/route_continuity.py",
+                ),
+                (
+                    "service-continuity",
+                    "src/service_continuity.py",
+                ),
+            )
 
-                unified = self.run_command(
-                    sys.executable,
-                    "-m",
-                    "src.cli",
-                    command,
-                    str(old_feed),
-                    str(new_feed),
-                )
+            for command, script in pairs:
+                with self.subTest(command=command):
+                    direct = self.run_command(
+                        sys.executable,
+                        script,
+                        str(old_feed),
+                        str(new_feed),
+                    )
 
-                self.assertEqual(
-                    direct.returncode,
-                    unified.returncode,
-                )
+                    unified = self.run_command(
+                        sys.executable,
+                        "-m",
+                        "src.cli",
+                        command,
+                        str(old_feed),
+                        str(new_feed),
+                    )
 
-                self.assertEqual(
-                    direct.stdout,
-                    unified.stdout,
-                )
+                    self.assertEqual(
+                        direct.returncode,
+                        unified.returncode,
+                    )
 
-                self.assertEqual(
-                    direct.stderr,
-                    unified.stderr,
-                )
+                    self.assertEqual(
+                        direct.stdout,
+                        unified.stdout,
+                    )
+
+                    self.assertEqual(
+                        direct.stderr,
+                        unified.stderr,
+                    )
 
 
 if __name__ == "__main__":
