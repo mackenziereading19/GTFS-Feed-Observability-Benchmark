@@ -248,8 +248,9 @@ def analyse(old_path, new_path):
     }
 
 
-def main():
+def main(argv=None, prog=None):
     parser = argparse.ArgumentParser(
+        prog=prog,
         description=(
             "Analyse semantic continuity of routes across two GTFS feeds."
         )
@@ -258,7 +259,7 @@ def main():
     parser.add_argument("baseline", type=Path)
     parser.add_argument("candidate", type=Path)
 
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     result = analyse(
         args.baseline,

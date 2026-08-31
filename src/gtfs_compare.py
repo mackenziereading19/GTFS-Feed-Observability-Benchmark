@@ -286,8 +286,9 @@ def compare_manifests(before, after):
     }
 
 
-def main():
+def main(argv=None, prog=None):
     parser = argparse.ArgumentParser(
+        prog=prog,
         description=(
             "Compare two GTFS observability manifests."
         )
@@ -296,7 +297,7 @@ def main():
     parser.add_argument("baseline", type=Path)
     parser.add_argument("candidate", type=Path)
 
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     baseline = load_manifest(args.baseline)
     candidate = load_manifest(args.candidate)

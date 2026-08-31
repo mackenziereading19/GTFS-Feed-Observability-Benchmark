@@ -312,11 +312,12 @@ def analyse(old_path, new_path):
     }
 
 
-def main():
-    parser = argparse.ArgumentParser()
+def main(argv=None, prog=None):
+    parser = argparse.ArgumentParser(
+        prog=prog,)
     parser.add_argument("baseline", type=Path)
     parser.add_argument("candidate", type=Path)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     json.dump(
         analyse(

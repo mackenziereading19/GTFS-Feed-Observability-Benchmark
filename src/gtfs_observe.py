@@ -74,8 +74,9 @@ def unique_count(rows, field):
     )
 
 
-def main():
+def main(argv=None, prog=None):
     parser = argparse.ArgumentParser(
+        prog=prog,
         description="Create a deterministic GTFS snapshot manifest."
     )
 
@@ -85,7 +86,7 @@ def main():
         help="Path to a local GTFS ZIP.",
     )
 
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     feed = args.feed.expanduser().resolve()
 

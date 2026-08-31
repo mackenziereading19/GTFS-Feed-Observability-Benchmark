@@ -403,11 +403,12 @@ def candidate_scores(old_summary, new_feed):
     return candidates[:10]
 
 
-def main():
-    parser = argparse.ArgumentParser()
+def main(argv=None, prog=None):
+    parser = argparse.ArgumentParser(
+        prog=prog,)
     parser.add_argument("baseline", type=Path)
     parser.add_argument("candidate", type=Path)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     old_feed = load_feed(args.baseline)
     new_feed = load_feed(args.candidate)
