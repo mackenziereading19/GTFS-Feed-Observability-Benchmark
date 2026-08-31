@@ -66,6 +66,8 @@ V0 uses only the Python standard library.
 ```bash
 python3 src/gtfs_observe.py FEED.zip > manifest.json
 
+```
+
 ## V1 — Pairwise manifest comparison
 
 V1 compares two snapshot manifests and reports descriptive changes including:
@@ -86,6 +88,50 @@ Usage:
 python3 src/gtfs_compare.py \
   baseline-manifest.json \
   candidate-manifest.json
+
+```
+
+## Unified command-line interface
+
+The repository also provides one additive command-line entry point:
+
+```bash
+python3 -m src.cli --help
+```
+
+Available subcommands:
+
+```text
+observe
+compare
+route-continuity
+route-forensics
+service-continuity
+```
+
+Examples:
+
+```bash
+python3 -m src.cli observe FEED.zip > manifest.json
+
+python3 -m src.cli compare baseline-manifest.json candidate-manifest.json
+
+python3 -m src.cli route-continuity baseline.zip candidate.zip
+
+python3 -m src.cli route-forensics baseline.zip candidate.zip
+
+python3 -m src.cli service-continuity baseline.zip candidate.zip
+```
+
+Run any subcommand with `--help` for its argument contract.
+
+The unified CLI is additive. The existing script entry points remain
+supported and preserve their previous behaviour.
+
+`route-forensics` is a bounded forensic tool developed around the frozen
+route targets used in the repository evidence. It should not be interpreted
+as a generic route-matching command without first reviewing its configured
+targets and assumptions.
 
 ## V3 — Identity-aware change
 
