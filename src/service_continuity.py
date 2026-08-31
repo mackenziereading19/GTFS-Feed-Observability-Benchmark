@@ -7,19 +7,22 @@ import json
 import sys
 import zipfile
 from collections import defaultdict
-from datetime import datetime, timedelta
 from pathlib import Path
 
+try:
+    from .service_calendar import (
+        WEEKDAYS,
+        calculate_active_dates,
+        parse_gtfs_date,
+    )
+except ImportError:
+    from service_calendar import (
+        WEEKDAYS,
+        calculate_active_dates,
+        parse_gtfs_date,
+    )
 
-WEEKDAYS = (
-    "monday",
-    "tuesday",
-    "wednesday",
-    "thursday",
-    "friday",
-    "saturday",
-    "sunday",
-)
+
 
 
 def read_table(zf, basename):
@@ -50,10 +53,7 @@ def read_table(zf, basename):
 
 
 def parse_date(value):
-    return datetime.strptime(
-        value,
-        "%Y%m%d",
-    ).date()
+    return parse_gtfs_date(value)
 
 
 def load_feed(path):
@@ -91,43 +91,23 @@ def load_feed(path):
 
 def effective_dates(feed, service_id):
     row = feed["calendar"].get(service_id)
-    active = set()
 
-    if row:
-        start = parse_date(row["start_date"])
-        end = parse_date(row["end_date"])
-
-        current = start
-
-        while current <= end:
-            field = WEEKDAYS[current.weekday()]
-
-            if row.get(field) == "1":
-                active.add(current)
-
-            current += timedelta(days=1)
-
-    additions = []
-    removals = []
-
-    for exc in feed["exceptions"].get(
+    exceptions = feed["exceptions"].get(
         service_id,
         [],
-    ):
-        current = parse_date(exc["date"])
+    )
 
-        if exc["exception_type"] == "1":
-            active.add(current)
-            additions.append(exc["date"])
+    calculated = calculate_active_dates(
+        row,
+        exceptions,
+    )
 
-        elif exc["exception_type"] == "2":
-            active.discard(current)
-            removals.append(exc["date"])
+    ordered = calculated["active_dates"]
 
     return {
         "dates": tuple(
-            d.strftime("%Y%m%d")
-            for d in sorted(active)
+            date.strftime("%Y%m%d")
+            for date in ordered
         ),
         "calendar_start": (
             row.get("start_date")
@@ -147,11 +127,15 @@ def effective_dates(feed, service_id):
             if row
             else None
         ),
-        "exception_additions": tuple(
-            sorted(additions)
+        "exception_additions": (
+            calculated[
+                "exception_additions"
+            ]
         ),
-        "exception_removals": tuple(
-            sorted(removals)
+        "exception_removals": (
+            calculated[
+                "exception_removals"
+            ]
         ),
     }
 

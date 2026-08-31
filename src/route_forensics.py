@@ -6,8 +6,20 @@ import io
 import json
 import zipfile
 from collections import Counter, defaultdict
-from datetime import datetime, timedelta
 from pathlib import Path
+
+try:
+    from .service_calendar import (
+        WEEKDAYS,
+        calculate_active_dates,
+        parse_gtfs_date,
+    )
+except ImportError:
+    from service_calendar import (
+        WEEKDAYS,
+        calculate_active_dates,
+        parse_gtfs_date,
+    )
 
 
 TARGETS = {"3075", "3082"}
@@ -93,22 +105,10 @@ def load_feed(path):
     }
 
 
-WEEKDAYS = (
-    "monday",
-    "tuesday",
-    "wednesday",
-    "thursday",
-    "friday",
-    "saturday",
-    "sunday",
-)
 
 
 def parse_date(value):
-    return datetime.strptime(
-        value,
-        "%Y%m%d",
-    ).date()
+    return parse_gtfs_date(value)
 
 
 def effective_service_dates(feed, service_id):
@@ -120,37 +120,12 @@ def effective_service_dates(feed, service_id):
         "exceptions_by_service"
     ].get(service_id, [])
 
-    active = set()
+    calculated = calculate_active_dates(
+        calendar,
+        exceptions,
+    )
 
-    if calendar:
-        start = parse_date(
-            calendar["start_date"]
-        )
-        end = parse_date(
-            calendar["end_date"]
-        )
-
-        cursor = start
-
-        while cursor <= end:
-            weekday = WEEKDAYS[
-                cursor.weekday()
-            ]
-
-            if calendar.get(weekday) == "1":
-                active.add(cursor)
-
-            cursor += timedelta(days=1)
-
-    for row in exceptions:
-        current = parse_date(row["date"])
-
-        if row["exception_type"] == "1":
-            active.add(current)
-        elif row["exception_type"] == "2":
-            active.discard(current)
-
-    ordered = sorted(active)
+    ordered = calculated["active_dates"]
 
     return {
         "calendar_start_date": (
@@ -172,15 +147,15 @@ def effective_service_dates(feed, service_id):
             if calendar
             else []
         ),
-        "exception_additions": sorted(
-            row["date"]
-            for row in exceptions
-            if row["exception_type"] == "1"
+        "exception_additions": list(
+            calculated[
+                "exception_additions"
+            ]
         ),
-        "exception_removals": sorted(
-            row["date"]
-            for row in exceptions
-            if row["exception_type"] == "2"
+        "exception_removals": list(
+            calculated[
+                "exception_removals"
+            ]
         ),
         "effective_date_count": len(ordered),
         "effective_first_date": (
