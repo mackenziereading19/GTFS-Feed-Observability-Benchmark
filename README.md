@@ -223,3 +223,44 @@ while the added service represented Friday-only operation.
 
 This shows that a nearly unchanged aggregate GTFS snapshot can conceal
 substantive restructuring at the service-calendar layer.
+
+## Testing
+
+The test suite uses Python `unittest` and requires no third-party packages.
+
+Run all tests from the repository root:
+
+```bash
+python3 -m unittest discover -s tests -p "test_*.py" -v
+```
+
+The tests create their own temporary GTFS fixtures where ZIP inputs are required. They do not depend on the ignored local `tmp/` directory or on the real-world source ZIPs used during exploratory evaluation.
+
+## Reproducibility and provenance
+
+Tracked JSON files under `evidence/` preserve outputs from the longitudinal evaluations used during development.
+
+Source provenance for the real-world evaluations is recorded in:
+
+ - `evidence/santa-monica/SOURCE_PROVENANCE.txt`;
+ - `evidence/mbta/SOURCE_PROVENANCE.txt`.
+
+The original GTFS ZIP files are not committed to this repository. Local ZIP inputs and exploratory working files are intentionally excluded by `.gitignore`.
+
+The tracked evidence therefore records the derived outputs and source provenance, while reproduction from the original publisher archives requires obtaining the corresponding source feeds described by the provenance records.
+
+Synthetic regression tests are self-contained and can be run from a fresh clone without those real-world source archives.
+
+## Limitations
+
+This toolkit is descriptive observability software, not a GTFS validator and not a service-health scoring system.
+
+A detected change does not by itself establish an error, deterioration, withdrawal of service, or real-world infrastructure change. GTFS identifiers may be regenerated between feed versions, so identifier disappearance should not be treated as proof that the represented service or object disappeared.
+
+`route-forensics` is intentionally bounded to the frozen route targets used in the repository evidence. It is retained as a reproducible forensic tool, not presented as a general-purpose route matcher.
+
+The repository does not currently provide a hosted service, database, publisher identity resolution, fuzzy authoritative matching, or automatic interpretation of operational intent.
+
+## License
+
+The software in this repository is released under the MIT License. See `LICENSE`.
