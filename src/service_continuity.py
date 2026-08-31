@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 
 import argparse
-import csv
-import io
 import json
 import sys
 import zipfile
 from collections import defaultdict
 from pathlib import Path
+
+try:
+    from .gtfs_io import (
+        matching_basename_members,
+        read_normalized_csv_rows,
+    )
+except ImportError:
+    from gtfs_io import (
+        matching_basename_members,
+        read_normalized_csv_rows,
+    )
 
 try:
     from .service_calendar import (
@@ -26,12 +35,10 @@ except ImportError:
 
 
 def read_table(zf, basename):
-    matches = [
-        name
-        for name in zf.namelist()
-        if not name.endswith("/")
-        and name.rsplit("/", 1)[-1] == basename
-    ]
+    matches = matching_basename_members(
+        zf,
+        basename,
+    )
 
     if not matches:
         return []
@@ -41,15 +48,10 @@ def read_table(zf, basename):
             f"Expected one {basename}; found {len(matches)}"
         )
 
-    raw = zf.read(matches[0]).decode("utf-8-sig")
-
-    return [
-        {
-            k: (v or "").strip()
-            for k, v in row.items()
-        }
-        for row in csv.DictReader(io.StringIO(raw))
-    ]
+    return read_normalized_csv_rows(
+        zf,
+        matches[0],
+    )
 
 
 def parse_date(value):

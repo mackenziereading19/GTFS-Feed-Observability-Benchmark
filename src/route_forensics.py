@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
 
 import argparse
-import csv
-import io
 import json
 import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
+
+try:
+    from .gtfs_io import (
+        matching_basename_members,
+        read_normalized_csv_rows,
+    )
+except ImportError:
+    from gtfs_io import (
+        matching_basename_members,
+        read_normalized_csv_rows,
+    )
 
 try:
     from .service_calendar import (
@@ -26,12 +35,10 @@ TARGETS = {"3075", "3082"}
 
 
 def find_member(zf, basename):
-    matches = [
-        name
-        for name in zf.namelist()
-        if not name.endswith("/")
-        and name.rsplit("/", 1)[-1] == basename
-    ]
+    matches = matching_basename_members(
+        zf,
+        basename,
+    )
 
     if len(matches) != 1:
         raise ValueError(
@@ -43,16 +50,11 @@ def find_member(zf, basename):
 
 def read_table(zf, basename):
     member = find_member(zf, basename)
-    raw = zf.read(member).decode("utf-8-sig")
-    reader = csv.DictReader(io.StringIO(raw))
 
-    return [
-        {
-            k: (v or "").strip()
-            for k, v in row.items()
-        }
-        for row in reader
-    ]
+    return read_normalized_csv_rows(
+        zf,
+        member,
+    )
 
 
 def load_feed(path):
