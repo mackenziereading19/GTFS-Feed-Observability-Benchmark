@@ -3,3 +3,5 @@ pycache/
 *.pyc
 *.zip
 tmp/
+
+.venv/

@@ -1,0 +1,288 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mackenziereading19/GTFS-Feed-Observability-Benchmark/schemas/manifest-v2.schema.json",
+  "title": "GTFS Feed Observability Manifest v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source",
+    "archive",
+    "tables",
+    "entities",
+    "identities",
+    "feed_info",
+    "calendar",
+    "calendar_dates"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "filename",
+        "sha256",
+        "size_bytes"
+      ],
+      "properties": {
+        "filename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+
+    "archive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file_count",
+        "filenames"
+      ],
+      "properties": {
+        "file_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "filenames": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+
+    "tables": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/table"
+      }
+    },
+
+    "entities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "agencies": {
+          "$ref": "#/$defs/entity"
+        },
+        "routes": {
+          "$ref": "#/$defs/entity"
+        },
+        "stops": {
+          "$ref": "#/$defs/entity"
+        },
+        "trips": {
+          "$ref": "#/$defs/entity"
+        },
+        "service_ids_in_trips": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+
+    "identities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "routes": {
+          "$ref": "#/$defs/identity_list"
+        },
+        "stops": {
+          "$ref": "#/$defs/identity_list"
+        },
+        "service_ids_in_trips": {
+          "$ref": "#/$defs/identity_list"
+        }
+      }
+    },
+
+    "feed_info": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+
+    "calendar": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/calendar"
+        }
+      ]
+    },
+
+    "calendar_dates": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/calendar_dates"
+        }
+      ]
+    }
+  },
+
+  "$defs": {
+    "table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "size_bytes"
+      ],
+      "properties": {
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rows": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+
+    "entity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rows",
+        "unique_ids"
+      ],
+      "properties": {
+        "rows": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unique_ids": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+
+    "identity_list": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+
+    "date_bounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimum",
+        "maximum"
+      ],
+      "properties": {
+        "minimum": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maximum": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+
+    "calendar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rows",
+        "service_ids",
+        "start_date",
+        "end_date"
+      ],
+      "properties": {
+        "rows": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "service_ids": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "start_date": {
+          "$ref": "#/$defs/date_bounds"
+        },
+        "end_date": {
+          "$ref": "#/$defs/date_bounds"
+        }
+      }
+    },
+
+    "calendar_dates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rows",
+        "service_ids",
+        "date",
+        "exception_types"
+      ],
+      "properties": {
+        "rows": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "service_ids": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "date": {
+          "$ref": "#/$defs/date_bounds"
+        },
+        "exception_types": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}
